@@ -1,438 +1,326 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap');
 
-
-/* Global Css */
-*{
-  margin: 0px;
-  scroll-behavior: smooth;
-}
-html{
-  width: 100%;
-}
 body{
-  padding: 0px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'poppins', sans-serif;
+  margin: 0;
+  padding: 0;
   background-color: #07060c;
-  color: #ffffff;
+  color: var(--warna-paragraft);
+  line-height: 1.2;
+  font-size: 5vw;
 }
 :root{
-  --warna-title: #ffffff;
+  --warna-heading: #ffffff;
   --warna-paragraft: #fafafa;
   --warna-button: #ff8a00;
 }
+/* CIRCLE */
+.circle{
+  z-index: -100;
+  position: absolute;
+  width: 80%;
+  opacity: 80%;
+}
+.circle1{
+  left: 0;
+  top: 50vw;
+}
+.circle2{
+  top: 360vw;
+  right: 0;
+}
+.circle3{
+  left: 0;
+  top: 800vw;
+}
+
+
+main{
+  width: 90%;
+  margin: 10px auto;
+}
+
+section{
+  padding: 10px;
+  margin: 50px 0px 0px 0px;
+}
+
+span{
+  color: var(--warna-button);
+}
+h2{
+  color: var(--warna-heading);
+  font-size: 7vw;
+}
 p{
   color: var(--warna-paragraft);
+  font-size: 4vw;
 }
-span{
-  color: #ff9900;
-}
-section .title{
+.title-section,
+.link-more{
   display: flex;
   flex-direction: column;
   align-items: center;
-} 
+  padding: 50px 2px;
+}
+.container{
+  padding: 10px;
+}
 .card{
   padding: 20px;
   width: 250px;
   background-color: #2323232e;
   border: 2px solid var(--warna-button);
-  border-radius: 15px 5px 15px 5px;
+  border-radius: 20px 10px 20px 10px;
   display: flex;
   gap: 10px;
 }
-main{
-  padding: 0px 100px;
-}
-
-
-/* CIRCLE */
-.circle{
-  z-index: -100;
-  position: absolute;
-}
-.circle1{
-  left: 0;
-  top: 150px;
-}
-.circle2{
-  top: 850px;
-  right: 0;
-}
-.circle3{
-  left: 0;
-  top: 2700px;
-}
-
-/* Header */
-header{
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 100px;
-}
-header h1{
-  font-size: 20px;
-  color: #ff9900;
-}
-header nav ul{
-  display: flex;
-}
-header nav ul a{
-  text-decoration: none;
-  color: var(--warna-title);
-}
-header nav ul a li{
-  list-style: none;
-  font-size: 15px;
-  padding: 10px;
-}
-
-
-/* SECTION */
-section{
-  padding: 100px 5px;
+.title-section p,
+.link-more p{
+  margin-top: -15px;
 }
 
 
 
-/* ABOUT */
+/* About */
 #about{
   display: flex;
-  justify-content: space-between;
+  flex-direction: column-reverse;
+  gap: 20vw;
 }
 #about #left{
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
 }
-#about #left span{
-  font-size: 27px;
+#about #left .text{
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
 }
-#about #left h2{
-  color: var(--warna-title);
-  font-size: 30px;
-  line-height: 30px;
+#about #left .text span{
+  margin-bottom: -40px;
 }
-#about #left p{
-  width: 70%;
-  font-size: 20px;
-  line-height: 20px;
-  color: var(--warna-paragraft);
+#about #left .text p{
+  margin-top: -10px;
 }
 #about #left .btn{
   display: flex;
-  gap: 25px;
+  gap: 20px;
+  padding: 5px;
 }
 #about #left .btn button{
-  background-color: var(--warna-button);
   padding: 5px 15px;
   border: none;
-  border-radius: 20px;
+  border-radius: 15px;
+  background-color: var(--warna-button);
 }
-#about #right img{
-  width: 250px;
-}
-#about #right .socialMedia i{
-  color: #ff8a00;
-  font-size: 40px;
-  position: absolute;
-} 
-#about #right .socialMedia .fa-instagram{
-  top: 100px; 
-}
-#about #right .socialMedia .fa-github{
-  top: 180px;
-  right: 380px;
-}
-#about #right .socialMedia .fa-linkedin{
-  top: 280px;
-  right: 380px;
-}
-#about #right .socialMedia .fa-tiktok{
-  top: 350px;
-}
-
-
-/* SERVICE */
-#service{
+#about #right{
+  width: 80%;
+  margin: auto;
+  
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 60px;
   justify-content: center;
 }
-#service .container{
-  padding: 10px 5px;
+#about #right .image{
+  width: 90%;
+}
+#about #right .image img{
+  height: auto;
+  width: 100%;
+  transform: translate(0rem, 1.5rem);
+}
+#about #right .media-social{
+  margin: -1vw;
+  z-index: -200;
+}
+#about #right .media-social i{
+  font-size: 8vw;
+  color: var(--warna-button);
+  position: absolute;
+  transform: translate(10px, 15px);
+}
+#about #right .media-social .fa-instagram{
+  right: 70vw;
+  top: 10vw;
+}
+#about #right .media-social .fa-github{
+  right: 84vw;
+  top: 28vw;
+}
+#about #right .media-social .fa-linkedin{
+  right: 84vw;
+  top: 52vw;
+}
+#about #right .media-social .fa-tiktok{
+  left: 24vw;
+  top: 73vw;
+}
+
+
+/* Service */
+#service, #skils, #project{
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  gap: 20px;
+}
+#service .container{
+  display: flex;
   flex-direction: column;
   gap: 50px;
+  justify-content: center;
+  align-items: center;
 }
 #service .container .fristAndSecond{
   display: flex;
+  flex-direction: column;
   gap: 50px;
 }
-#service .container .card .image{
-  display: flex;
-  align-items: center;
+#service .card .image{
+  margin: auto;
 }
-#service .container .card .text{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+#service .card .text h2,
+#skils .card h2{
+  font-size: 5vw;
 }
-#service .container .card .text h2{
-  font-size: 16px;
-  line-height: 16px;
-}
-#service .container .card .text p{
-  font-size: 12px;
+#service .card .text p{
+  font-size: 3vw;
+  margin-top: -4vw;
 }
 
 
-/* SKILS */
-#skils{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 60px;
-  justify-content: center;
-}
+/* Skils */
 #skils .container{
-  padding: 20px 10px;
   display: flex;
-  gap: 20px;
-  justify-content: center;
-}
-#skils article .card{
-  text-align: center;
   flex-direction: column;
-  gap: 20px;
+  gap: 50px;
   justify-content: center;
   align-items: center;
 }
-#skils article .card .icon{
+#skils .card{
   display: flex;
-  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#skils .card .icon{
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+}
+#skils .card .icon img{
+  width: 30%;
+}
+#skils .card p{
+  font-size: 3vw;
 }
 
-#project{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 60px;
-  justify-content: center;
-}
+
+/* Project */
 #project .container{
-  display: flex;
-  align-items:center;
-  justify-content: start;
-  padding: 10px 20px;
   width: 100%;
 }
-#project .container .image{
-  display: flex;
-}
-#project .container .image img{
-  display: flex;
-  width: 300px;
-  aspect-ratio: 1/1;
-  border: 4px solid var(--warna-button);
+#project .slider .card-project{
+  width: 50vw;
+  height: 50vw;
+  border: 3px solid var(--warna-button);
   border-radius: 20px;
+  overflow: hidden;
 }
-#project .link-more{
-  text-align: center;
+#project .slider .card-project img{
+  width: 100%;
 }
 
-/* CONTACT */
-#contact{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
+
+/* Contact Me */
 #contact .title-contact{
-  padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: start;
 }
-#contact .title-contact h2{
-  font-size: 40px;
+#contact .title-contact h2,
+#contact .title-contact span{
+  font-size: 7vw;
 }
 #contact .title-contact p{
-  font-size: 20px;
-  width: 50%;
-  line-height: 20px;
+  margin-top: -60px;
+  padding: 20px 5px;
+  font-size: 4vw;
 }
-#contact .form{
+#contact form label{
+  font-size: 3vw;
+}
+#contact form input,
+#contact form textarea{
+  width: 80%;
+  height: 5vh;
   margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 100px;
-}
-#contact .form form{
-  margin: auto;
-  width: 100%;
-}
-#contact .form form input,
-#contact .form form textarea{
-  border-radius: 10px;
-  width: 380px;
-  border: 2px solid #ff8a00;
-  background-color: #232323;
-  color: #ffffff;
   padding: 5px 15px;
+  font-size: 4vw;
+
+  background-color: #2323232e;
+  border: 2px solid var(--warna-button);
+  border-radius: 20px 10px 20px 10px;
+  color: #ffffff;
 }
-form input{
-  height: 30px;
+#contact form input:focus,
+#contact form textarea:focus{
+  border: 2px solid var(--warna-button);
+  outline: #ff8a00;
 }
-#contact .form button{
+#contact form textarea{
+  height: 20vh;
+}
+#contact form button{
+  padding: 5px 15px;
   border: none;
-  border-radius: 20px;
-  padding: 10px 0px;
-  width: 100px;
+  border-radius: 15px;
   background-color: var(--warna-button);
 }
 
 
-
-/* FOOTER */
+/* Footer */
 footer{
   background-color: #07060cb0;
-  height: 85vh;
+  height: 70vh;
   padding: 100px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  gap: 100px;
 }
 footer .medsos
 footer .tech{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  
+  text-align: center;
   line-height: 26px;
 }
-footer .medsos .icon a i{
-  color: #f5f5f5;
-  font-size: 38px;
-  margin: 10px;
+footer .tech .icon,
+footer .medsos .icon{
+  display: flex;
+  gap: 20px;
+}
+footer .tech .icon img{
+  width: 8vw;
+  object-fit: fill;
+}
+footer .medsos .icon i{
+  
+  color: var(--warna-button);
+  font-size: 8vw;
 }
 footer .medsos h1,
 footer .tech h1{
-  font-size: 35px;
-}
-
-
-
-@media (min-width: 781px) and (max-width: 960px){
-  #skils .container{
-    flex-direction: column;
-  }
-}
-
-
-
-
-@media (min-width: 300px) and (max-width: 780px){
-  body{
-    margin: 0px;
-    padding: 0px;
-    max-width: 750px;
-    min-width: 300px;
-  }
-  main{
-    padding: 0px 50px;
-    width: 80%;
-  }
-
-
-
-  
-  /* CIRCLE */
-  .circle{
-    z-index: -200;
-    position: absolute;
-  }
-  .circle1{
-    left: 0;
-    top: 150px;
-  }
-  .circle2{
-    top: 850px;
-    right: 10;
-  }
-  .circle3{
-    left: 0;
-    top: 2700px;
-  }
-
-
-
-
-  #about{
-    flex-direction: column-reverse;
-    gap: 100px;
-  }
-  #about #left{
-    padding: 10px 10px 10px 20px;
-  }
-  #about #right{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #about #right img{
-    width: 270px;
-  }
-  #about #right .socialMedia .fa-instagram{
-    top: 86px;
-    right: 495px;
-  }
-  #about #right .socialMedia .fa-github{
-    top: 170px;
-    right: 563px;
-  }
-  #about #right .socialMedia .fa-linkedin{
-    top: 300px;
-    right: 563px;
-  }
-  #about #right .socialMedia .fa-tiktok{
-    top: 380px;
-    right: 495px;
-  }
-  #about #right .socialMedia i{
-    font-size: 40px;
-    transform: translateX(20px);
-  }
-
-
-
-  #service .container{
-    gap: 20px;
-  }
-  #service  .container .fristAndSecond{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  #service  .container .fristAndSecond .card{
-    margin: 20px 0px
-  }
-
-
-
-  #skils .container{
-    flex-direction: column;
-  }
-
-
-
-  #contact{
-    flex-direction: column;
-  }
-
-  footer{
-    flex-direction: column;
-    justify-content: center;
-    gap: 70px;
-  }
+  font-size: 5vw;
+  text-align: center;
 }
