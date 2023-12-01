@@ -1,4 +1,4 @@
-@media screen and (min-width: 200px) and (max-width: 445px){
+@media screen and (min-width: 200px) and (max-width: 520px){
   .card{
     width: 80%;
     margin: auto;
@@ -28,7 +28,7 @@
   }
 }
 
-@media screen and (min-width: 446px) and (max-width: 720px){
+@media screen and (min-width: 520px){
   section{
     padding: 10px;
     margin: 50px 0px 0px 0px;
@@ -46,7 +46,7 @@
   }
   .card{
     padding: 20px;
-    width: 27vw;
+    width: 20vw;
     background-color: #2323232e;
     border: 2px solid var(--warna-button);
     border-radius: 20px 10px 20px 10px;
@@ -92,7 +92,7 @@
     font-size: 4vw;
     color: var(--warna-button);
     position: absolute;
-    transform: translate(10px, 5px);
+    transform: translate(10px, 15px);
   }
   #about #right .media-social .fa-instagram{
     right: 26vw;
@@ -147,8 +147,9 @@
 
   /* Skils */
   #skils .container{
+    margin: auto;
     flex-direction: row;
-    flex-wrap:wrap;
+    flex-wrap:wrap-reverse
   }
   #skils .container .card h2{
     font-size: 4vw;
@@ -174,6 +175,8 @@
   /* Contact */
   #contact{
     margin: 5px auto;
+    display: flex;
+    flex-direction: row;
   }
   #contact .title-contact h2,
   #contact .title-contact span{
@@ -186,5 +189,11 @@
   #contact .form button{
     font-size: 3vw;
     padding: 5px 20px;
+  }
+}
+
+@media screen and (min-width: 800px){
+  #about #right .media-social i{
+    margin-top: -20px;
   }
 }
