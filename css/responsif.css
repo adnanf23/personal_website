@@ -85,14 +85,14 @@
     transform: translate(0px, -53px);
   }
   #about #right .media-social{
-    margin: -1vw;
+    margin-top: -4vw;
     z-index: -200;
   }
   #about #right .media-social i{
     font-size: 4vw;
     color: var(--warna-button);
     position: absolute;
-    transform: translate(10px, 15px);
+    margin-top: -1vw;
   }
   #about #right .media-social .fa-instagram{
     right: 26vw;
@@ -192,8 +192,21 @@
   }
 }
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 800px) {
+  #about{
+    flex-direction: row;
+  }
   #about #right .media-social i{
-    margin-top: -20px;
+    margin-top: -3vw;
+  }
+  .circle3{
+    left: 0;
+    top: 250vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header{
+    
   }
 }
