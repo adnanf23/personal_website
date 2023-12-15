@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap');
 
+*{
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth;
+}
 body{
   font-family: 'poppins', sans-serif;
   margin: 0;
@@ -75,58 +80,70 @@ p{
   display: flex;
   gap: 10px;
 }
-.title-section p,
-.link-more p{
-  margin-top: -15px;
-}
 
 
 
 /* HEADER */
-nav{
-  font-family: 'poppins', sans-serif;
-  padding: 20px 60px 0px 60px;
-  position: sticky;
-  top: 0;
-  background-color: transparent;
-  transition: background-color 0.5s ease;
+header{
+  padding: 15px 0px 15px 20px;
   z-index: 100;
 }
-.nav-effect{
-    background-color: rgba(191, 191, 191, 0.308);
-    box-shadow: 0px 5px 20px rgb(147, 147, 147);
-    backdrop-filter: blur(5px);   
-  }
+header .title-h h1{
+  font-size: 4vw;
+}
 
-nav .name{
-  margin-bottom: -15px;
+header nav{
+  background-color: #1a1a1a;
+  padding: 20px;
+  position: absolute;
+  width: 91%;
+  left: 0;
+  top: -450px;
+  z-index: 1;
+  opacity: 0;
+  transition: 1s;
 }
-nav .list{
-  justify-content: end;
+header nav ul{
   display: flex;
-  margin-top: -36px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 80px;
+  transition: 1s;
+  margin: auto;
+  padding: 0px;
 }
-nav .list .link{
-  margin: 10px;
+header nav ul a{
+  text-decoration: none;
+  color: var(--warna-paragraft);
+}
+header nav ul a li{
   list-style: none;
 }
-nav .link a{
-  text-decoration: none;
-  color: black;
-  font-size: 18px;
-  font-weight: 1000;
+header label i{
+  position: absolute;
+  font-size: 4vw;
+  right: 20px;
+  top: 20px;
 }
-label #menu,
-label #close{
-    color: black;
-    font-size: 34px;
-    float: right;
-    cursor: pointer;
-    display: none;
+#menu,
+#close{
+  z-index: 12;
 }
-
-#check{
-    display: none;
+#check,
+#close{
+  display: none;
+}
+#check:checked ~ nav{
+  left: 0;
+  opacity: 100;
+  top: 76px;
+}
+#check:checked ~ label #close{
+  display: block;
+}
+#check:checked ~ label #menu{
+  display: none;
 }
 
 
@@ -136,6 +153,7 @@ label #close{
   display: flex;
   flex-direction: column-reverse;
   gap: 20vw;
+  margin-top: 100px;
 }
 #about #left{
   display: flex;
@@ -145,7 +163,7 @@ label #close{
 #about #left .text{
   display: flex;
   flex-direction: column;
-  padding: 5px;
+  gap: 15px;
 }
 #about #left .text span{
   margin-bottom: -40px;
@@ -177,17 +195,14 @@ label #close{
 #about #right .image img{
   height: auto;
   width: 100%;
-  transform: translate(0rem, 1.5rem);
 }
 #about #right .media-social{
-  margin: -1vw;
   z-index: -200;
 }
 #about #right .media-social i{
   font-size: 8vw;
   color: var(--warna-button);
   position: absolute;
-  transform: translate(10px, 15px);
 }
 #about #right .media-social .fa-instagram{
   right: 70vw;
@@ -227,16 +242,19 @@ label #close{
   flex-direction: column;
   gap: 50px;
 }
+#service .card{
+  flex-direction: column;
+}
 #service .card .image{
   margin: auto;
+  width: 80%;
+}
+#service .card .text{
+  flex: 1;
 }
 #service .card .text h2,
 #skils .card h2{
   font-size: 5vw;
-}
-#service .card .text p{
-  font-size: 3vw;
-  margin-top: -4vw;
 }
 
 
@@ -291,13 +309,13 @@ label #close{
   display: flex;
   flex-direction: column;
   align-items: start;
+  gap: 20px;
 }
 #contact .title-contact h2,
 #contact .title-contact span{
   font-size: 7vw;
 }
 #contact .title-contact p{
-  margin-top: -60px;
   padding: 20px 5px;
   font-size: 4vw;
 }

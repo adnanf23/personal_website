@@ -5,10 +5,11 @@
   }
   .circle3{
     left: 0;
-    top: 1000vw;
+    top: 8 00vw;
   }
 
 
+  /* ABOUT */
   #about #left .text span{
     margin-bottom: -20px;
   }
@@ -19,14 +20,16 @@
     font-size: 8vw;
     color: var(--warna-button);
     position: absolute;
-    transform: translate(7px, 2px);
+    transform: translate(7px, 95px);
   }
 
-
+  /* CONTACT */
   #contact .title-contact p{
     margin-top: -36px;
   }
 }
+
+
 
 @media screen and (min-width: 520px){
   section{
@@ -72,6 +75,11 @@
     top: 390vw;
   }
 
+    /* HEADER */
+    header .title h1{
+      font-size: 3.5vw;
+    }
+
 
   /* About */
   #about{
@@ -80,9 +88,6 @@
   #about #left .text span{
     font-size: 2.7vw;
     margin-bottom: -13px;
-  }
-  #about #right .image{
-    transform: translate(0px, -53px);
   }
   #about #right .media-social{
     margin-top: -4vw;
@@ -126,12 +131,9 @@
     flex-direction: row;
     gap: 50px;
   }
+  #service .card .text p,
   #service .card .text h2{
-  font-size: 2vw;
-  }
-  #service .card .text p{
-    font-size: 1.4vw;
-    margin-top: -1.5vw;
+    font-size: 2vw;
   }
   #service .card .image{
     display: flex;
@@ -198,15 +200,85 @@
   }
   #about #right .media-social i{
     margin-top: -3vw;
+    transform: translate(1px, 130px);
   }
+  #about #right .image{
+    transform: translate(-10px, 0px);
+  }
+
   .circle3{
     left: 0;
-    top: 250vw;
+    top: 210vw;
   }
 }
 
-@media screen and (max-width: 800px) {
+/* RESPONSIVE MEDIASOCIAL */
+@media screen and (min-width: 520px) and (max-width: 700px){
+  #about #right .media-social i{
+    transform: translate(7px, 100px);
+  }
+  #about #right .image{
+    transform: translate(5px, -30px);
+  } 
+}
+@media screen and (min-width: 700px) and (max-width: 760px){
+  #about #right .media-social i{
+    transform: translate(7px, 100px);
+  }
+  #about #right .image{
+    transform: translate(0px, -25px);
+  }
+}
+@media screen and (min-width: 760px)  and (max-width: 800px){
+  #about #right .media-social i{
+    transform: translate(7px, 150px);
+  }
+  #about #right .image{
+    transform: translate(0px, -25px);
+  }
+}
+@media screen and (min-width: 800px){
+  #about #right .media-social i{
+    transform: translate(1px, 167px);
+  }
+  #about #right .image{
+    transform: translate(0px, -18px);
+  }
+}
+
+
+/* NAVBAR */
+@media screen and (min-width: 760px){
+  #menu,
+  #close{
+    display: none;
+  }
   header{
-    
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 15px;
+  }
+  header .title-h{
+    width: 40%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  header .title-h h1{
+    font-size: 2.4vw;
+  }
+  header nav{
+    position: static;
+    opacity: 100;
+    background-color: transparent;
+    padding: 0px;
+    transition: 0s;
+  }
+  header nav ul{
+    flex-direction: row;
+    gap: 20px;
+    font-size: 2.3vw;
+    justify-content: end;
   }
 }
