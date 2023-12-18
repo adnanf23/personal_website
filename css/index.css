@@ -89,7 +89,7 @@ header{
   z-index: 100;
 }
 header .title-h h1{
-  font-size: 5.5vw;
+  font-size: 6vw;
 }
 
 header nav{
@@ -122,7 +122,7 @@ header nav ul a li{
 }
 header label i{
   position: absolute;
-  font-size: 5.5vw;
+  font-size: 7vw;
   right: 20px;
   top: 20px;
 }
@@ -203,6 +203,7 @@ header label i{
   font-size: 8vw;
   color: var(--warna-button);
   position: absolute;
+  transform: translate(0px, 110px);
 }
 #about #right .media-social .fa-instagram{
   right: 70vw;
@@ -297,6 +298,10 @@ header label i{
   border: 3px solid var(--warna-button);
   border-radius: 20px;
   overflow: hidden;
+}
+#project .slider .card-project{
+  width: 50vw;
+  height: 50vw;
 }
 #project .slider .card-project img{
   width: 100%;
