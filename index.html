@@ -19,6 +19,8 @@
 </head>
 <body>
 
+
+
   <!-- HEADER -->
   <header>
     <div class="title-h">
@@ -55,8 +57,8 @@
             </p>
           </div>
           <div class="btn">
-            <button>View CV</button>
-            <button>Certificate</button>
+            <button onclick="openCv()">View CV</button>
+            <button onclick="openCertificate()">Certificate</button>
           </div>
         </div>
         <div id="right" class="right">
@@ -64,16 +66,20 @@
             <img src="Assets/image/foto.png" alt="My Photo">
           </div>
           <div class="media-social">
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-github"></i></a>
-            <a href=""><i class="fa-brands fa-linkedin"></i></a>
-            <a href=""><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/_adnanf23" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
 
           </div>
         </div>
       </section>
 
+
+
       <img src="Assets/circle/Circle 1.png" alt="circle circle1" class="circle circle1">
+
+
 
         <!-- SERVICE -->
         <section id="service">
@@ -131,7 +137,11 @@
           </div>
         </section>
 
+
+
         <img src="Assets/circle/Circle 2.png" alt="" class="circle circle2">
+
+
 
 
          <!-- SKILS -->
@@ -182,6 +192,8 @@
         </section>
 
 
+
+
         <!-- PROJECT -->
         <section id="project">
           <div class="title-section">
@@ -204,6 +216,8 @@
         </section>
 
 
+
+
         <!-- CONTACT -->
         <section id="contact">
           <div class="title-contact">
@@ -224,7 +238,10 @@
 
   </main>
 
+
   <img src="Assets/circle/Circle 3.png" alt="" class="circle circle3" width="40%">
+  
+  
 
   <footer>
     <div class="medsos">
@@ -246,8 +263,110 @@
       </div>
     </div>
   </footer>
+
+
+
+
+
+  <!-- POPUP CV -->
+  <div id="popup-cv">
+    <div class="container">
+      <div class="close">
+        <i class="fas fa-xmark" onclick="closeCv()"></i>
+      </div>
+      <div class="content">
+          <img src="Assets/Cv/CV-01.jpg" alt="">
+      </div>
+      <div class="btn" onclick="openNotif()">
+        <div id="download"><i class="fa-solid fa-circle-down"></i><span>Download</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="alert">
+    <p>silahkan pilih format yang ingin anda download</p>
+    <div class="btn">
+      <a href="Assets/Cv/CV-01.jpg" id="btn-download" onclick="closeNotif()"><button>JPG</button></a>
+      <a href="Assets/Cv/CV.pdf" id="btn-download" onclick="closeNotif()"><button>PDF</button></a>
+    </div>
+  </div>
+
+
+
+  <!-- POPUP CERTIFICATE -->
+  <div id="main-contain">
+    <div class="close">
+      <i class="fas fa-xmark" onclick="closeCertificate()"></i>
+    </div>
+    <div id="popup-certificate">
+      <div class="container">
+       <div class="slider">
+  
+  
+  
+        <div class="card">
+          <img src="Assets/image/sertifikat.jpg" alt="">
+  
+          <div id="card-certificate" id="detail-certificate">
+           <div class="text">
+            <p><span><b>Name :</b></span> Memulai Dasar Pemrograman</p> 
+            <p><span><b>From :</b></span> Dicoding Indonesia</p>
+            <p><span><b>Date :</b></span> 02 Agustus 2023</p>
+           </div>
+          </div>
+  
+        </div>
+        <div id="card-certificate" class="card">
+          <img src="Assets/image/sertifikat.jpg" alt="">
+  
+          <div id="detail-certificate">
+            <div class="text">
+             <p><span><b>Name :</b></span> Memulai Dasar Pemrograman</p> 
+             <p><span><b>From :</b></span> Dicoding Indonesia</p>
+             <p><span><b>Date :</b></span> 02 Agustus 2023</p>
+            </div>
+           </div>
+  
+        </div>
+        <div id="card-certificate" class="card">
+          <img src="Assets/image/sertifikat.jpg" alt="">
+  
+          <div id="detail-certificate">
+            <div class="text">
+             <p><span><b>Name :</b></span> Memulai Dasar Pemrograman</p> 
+             <p><span><b>From :</b></span> Dicoding Indonesia</p>
+             <p><span><b>Date :</b></span> 02 Agustus 2023</p>
+            </div>
+           </div>
+  
+        </div>
+        <div id="card-certificate" class="card">
+          <img src="Assets/image/sertifikat.jpg" alt="">
+  
+          <div id="detail-certificate">
+            <div class="text">
+             <p><span><b>Name :</b></span> Memulai Dasar Pemrograman</p> 
+             <p><span><b>From :</b></span> Dicoding Indonesia</p>
+             <p><span><b>Date :</b></span> 02 Agustus 2023</p>
+            </div>
+           </div>
+  
+        </div>
+  
+  
+  
+       </div>
+      </div>
+     </div>
+   </div>
+
+
+
+
     
 
+
+  <script src="js/index.js"></script>
   
 </body>
 </html>

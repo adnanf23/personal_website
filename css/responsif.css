@@ -280,6 +280,19 @@
     color: var(--warna-button);
     font-size: 3.5vw;
   }
+
+
+
+  #popup-certficate{
+    height: 100vh;
+    margin: auto;
+  }
+  #popup-certficate .container{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 /* RESPONSIVE MEDIASOCIAL */
@@ -361,11 +374,82 @@
     background-color: transparent;
     padding: 0px;
     transition:none;
+    z-index: 0;
   }
   header nav ul{
     flex-direction: row;
     gap: 20px;
     font-size: 1.4vw;
     justify-content: end;
+  }
+}
+
+
+/* POPUP */
+@media screen and (min-width: 350px) and (max-width: 600px){
+  #popup-cv .container .content{
+    width: 70%;
+    height: 80%;
+  }
+  #popup-cv .container .btn #download span{
+    font-size: 5vw;
+  }
+  #popup-cv .container .btn #download i{
+    color: var(--warna-button);
+    font-size: 5vw;
+  }
+  #popup-cv .container .close{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 6vw;
+    color: var(--warna-button);
+    cursor: pointer;
+  }
+
+
+  #popup-certificate .container .slider .card{
+    width: 80vw;
+  }
+  #popup-certificate .container .slider .card #detail-certificate .text{
+    width: 80%;
+    font-size: 4vw;
+  }
+  #popup-certificate .container .slider .card #detail-certificate .text p{
+    font-size: 4vw;
+  }
+  #main-contain .close i{
+    font-size: 7vw;
+  }
+}
+@media screen and (min-width: 600px) {
+  #popup-cv .container .content{
+    width: 70%;
+    height: 9 0%;
+  }
+  #popup-cv .container .btn #download span{
+    font-size: 3vw;
+  }
+  #popup-cv .container .btn #download i{
+    color: var(--warna-button);
+    font-size: 3vw;
+  }
+
+
+  #popup-certificate .container .slider .card{
+    width: 40vw;
+  }
+  #popup-certificate .container .slider .card #detail-certificate .text{
+    width: 80%;
+    font-size: 2.3vw;
+  }
+  #popup-certificate .container .slider .card #detail-certificate .text p{
+    font-size: 2.3vw;
+  }
+  #popup-certificate .container .slider .card #detail-certificate .text p span{
+    font-size: 2.3vw;
+  }
+  #main-contain .close i{
+    font-size: 6vw;
   }
 }
