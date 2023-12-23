@@ -19,6 +19,10 @@
     transform: translate(0rem, -0.2rem);
   }
 
+  #about #right .media-social{
+    z-index: 1;
+  }
+
   /* CONTACT */
   #contact .title-contact p{
     margin-top: -36px;
@@ -202,6 +206,9 @@
     margin: 30px 0px;
   }
 
+  #about, #service, #skils, #project, #contact{
+    padding: 35px 0px;
+  }
 
   /* ABOUT */
   #about{
@@ -304,8 +311,11 @@
     transform: translate(-2px, 100px);
   }
   #about #right .image{
-    transform: translate(5px, -30px);
+    transform: translate(15px, -30px);
   } 
+  #about #right .media-social{
+    z-index: 1;
+  }
 }
 @media screen and (min-width: 700px) and (max-width: 760px){
   #about #right .media-social i{
@@ -315,7 +325,10 @@
     transform: translate(-6px, 90px);
   }
   #about #right .image{
-    transform: translate(0px, -25px);
+    transform: translate(10px, -20px);
+  }
+  #about #right .media-social{
+    z-index: 10;
   }
 }
 @media screen and (min-width: 760px)  and (max-width: 800px){
@@ -326,7 +339,10 @@
     transform: translate(-8px, 80px);
   }
   #about #right .image{
-    transform: translate(0px, -25px);
+    transform: translate(10px, -15px);
+  }
+  #about #right .media-social{
+    z-index: 10;
   }
 }
 @media screen and (min-width: 800px) and (max-width: 1000px){
@@ -336,13 +352,39 @@
   #about #right .media-social i{
     transform: translate(-20px, 110px);
   }
+  #about #right .image img{
+    transform:  translate(10px, -30px);
+  }
+  #about #right .media-social{
+    z-index: 10;
+  }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
   #about #right .media-social i{
     font-size: 3.7vw;
   }
   #about #right .media-social i{
     transform: translate(-20px, 100px);
+  }
+  #about #right .media-social{
+    z-index: 10;
+  }
+  #about #right .image img{
+    transform: translate(10px, -38px);
+  }
+}
+@media screen and (min-width: 1200px){
+  #about #right .media-social i{
+    font-size: 3.7vw;
+  }
+  #about #right .media-social i{
+    transform: translate(-20px, 100px);
+  }
+  #about #right .media-social{
+    z-index: 10;
+  }
+  #about #right .image img{
+    transform: translate(20px, -20px);
   }
 }
 

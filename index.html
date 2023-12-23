@@ -16,13 +16,22 @@
   <!-- LINK CSS -->
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/responsif.css">
+
+  <!-- LINK CDN AOS ANIMATE -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+
 </head>
 <body>
 
 
 
   <!-- HEADER -->
-  <header>
+  <header id="header">
     <div class="title-h">
       <h1>_adnanf23</h1>
     </div>
@@ -48,7 +57,7 @@
     <main>
 
       <section id="about">
-        <div id="left" class="left">
+        <div data-aos="fade-up" data-aos-duration="3000" id="left" class="left">
           <div class="text">
             <span>Hi!</span>
             <h2>I'm Adnan <br>Fauzan</h2>
@@ -62,14 +71,14 @@
           </div>
         </div>
         <div id="right" class="right">
-          <div class="image">
+          <div data-aos="fade-up" data-aos-duration="3000" class="image">
             <img src="Assets/image/foto.png" alt="My Photo">
           </div>
-          <div class="media-social">
+          <div id="medsoc" class="media-social">
             <a href="https://www.instagram.com/_adnanf23" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://github.com/adnanf23" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/adnanf23/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.tiktok.com/@_adnanf23" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
 
           </div>
         </div>
@@ -83,12 +92,12 @@
 
         <!-- SERVICE -->
         <section id="service">
-          <div class="title-section">
+          <div data-aos="fade-up" data-aos-duration="3000" class="title-section">
             <h2>My <span>Service</span></h2>
             <p>Find and see the service I have</p>
           </div>
     
-          <div class="container">
+          <div data-aos="fade-up" data-aos-duration="3000" class="container">
             <div class="fristAndSecond">
     
               <div class="card">
@@ -146,12 +155,12 @@
 
          <!-- SKILS -->
         <section id="skils">
-          <div class="title-section">
+          <div data-aos="fade-up" data-aos-duration="3000" class="title-section">
             <h2>My <span>Skils</span></h2>
             <p>Find and see the skils I have </p>
           </div>
 
-          <div class="container">
+          <div data-aos="fade-up" data-aos-duration="3000" class="container">
 
             <div class="card">
               <h2>Design</h2>
@@ -196,12 +205,12 @@
 
         <!-- PROJECT -->
         <section id="project">
-          <div class="title-section">
+          <div data-aos="fade-up" data-aos-duration="3000" class="title-section">
             <h2>My <span>Project</span></h2>
             <p>Find and see the project I'm working on</p>
           </div>
 
-          <div class="container">
+          <div data-aos="fade-up" data-aos-duration="3000" class="container">
             <div class="slider">
               <div class="card-project">
                 <img src="Assets/image/project1.png" alt="">
@@ -220,7 +229,7 @@
 
         <!-- CONTACT -->
         <section id="contact">
-          <div class="title-contact">
+          <div data-aos="fade-up" data-aos-duration="3000" class="title-contact">
             <h2><span>Contact</span> Me</h2>
             <p>Contact Me if you have any needs with Me!</p>
           </div>
@@ -304,16 +313,16 @@
   
   
   
-        <div class="card">
+        <div id="card-certificate" class="card">
           <img src="Assets/image/sertifikat.jpg" alt="">
   
-          <div id="card-certificate" id="detail-certificate">
-           <div class="text">
-            <p><span><b>Name :</b></span> Memulai Dasar Pemrograman</p> 
-            <p><span><b>From :</b></span> Dicoding Indonesia</p>
-            <p><span><b>Date :</b></span> 02 Agustus 2023</p>
+          <div id="detail-certificate">
+            <div class="text">
+             <p><span><b>Name :</b></span> Memulai Dasar Pemrograman</p> 
+             <p><span><b>From :</b></span> Dicoding Indonesia</p>
+             <p><span><b>Date :</b></span> 02 Agustus 2023</p>
+            </div>
            </div>
-          </div>
   
         </div>
         <div id="card-certificate" class="card">
@@ -365,8 +374,17 @@
 
     
 
-
+   <!-- JAVASCRIPT EXTERNAL -->
   <script src="js/index.js"></script>
-  
+
+  <!-- CDN JS AOS ANIMATE -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- INITIALIZE AOS ANIMATE -->
+  <script>
+    AOS.init();
+  </script>
+
+
 </body>
 </html>
