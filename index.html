@@ -24,13 +24,8 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
 
-  <!-- API GOOGLE SHEETS -->
-  <script src="https://apis.google.com/js/api.js"></script>
-  <script src="js/api.js"></script>
-
-
 </head>
-<body onload="initClient()">
+<body>
 
 
 
@@ -238,13 +233,16 @@
             <p>Contact Me if you have any needs with Me!</p>
           </div>
           <div class="form">
-            <form>
-              <label for="email">Your Email:</label><br>
-              <input type="email" id="email">
+            <form method="post" name="data">
+              <div id="alertForm" class="alert">
+                <p>your message has been <b>Sent!</b></p>
+              </div>
+              <label for="email">Your Email:</label>
+              <input type="email" id="email" name="email">
               <br>
               <label for="message">Your Message:</label><br>
-              <textarea id="message"></textarea><br>
-              <button type="submit" onclick="addToSheet()">Send</button>
+              <textarea id="message" name="message"></textarea><br>
+              <button type="submit">Send</button>
             </form>
           </div>
         </section>
@@ -380,6 +378,7 @@
 
    <!-- JAVASCRIPT EXTERNAL -->
   <script src="js/index.js"></script>
+  <script src="js/conectionSpreadsheets.js"></script>
 
   <!-- CDN JS AOS ANIMATE -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -388,8 +387,6 @@
   <script>
     AOS.init();
   </script>
-  <script src="js/api.js"></script>
-
 
 </body>
 </html>

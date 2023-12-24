@@ -114,7 +114,7 @@ header .title-h h1{
 }
 
 header nav{
-  background-color: #1a1a1a;
+  background-color: #07060c;
   padding: 20px;
   position: absolute;
   width: 91%;
@@ -162,7 +162,7 @@ header label i{
 #check:checked ~ nav{
   left: 0;
   opacity: 100;
-  top: 76px;
+  top: 65px;
 }
 #check:checked ~ label #close{
   display: block;
@@ -376,6 +376,17 @@ header label i{
 #contact .title-contact p{
   padding: 20px 5px;
   font-size: 4vw;
+}
+#contact form .alert{
+  width: 60%;
+  padding: 20px 15px;
+  border-radius: 23px;
+  background-color: var(--warna-button);
+  color: #000000;
+  display: none;
+}
+#contact form .alert p{
+  font-size: 3.2vw;
 }
 #contact form label{
   font-size: 3vw;

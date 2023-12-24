@@ -185,7 +185,7 @@
   #contact{
     margin: 5px auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
   #contact .title-contact h2,
   #contact .title-contact span{
@@ -194,6 +194,29 @@
   #contact .title-contact p{
     font-size: 3vw;
     margin-top: -46px;
+  }
+  #contact form input,
+  #contact form textarea{
+    width: 80%;
+    height: 5vh;
+    margin: auto;
+    padding: 5px 15px;
+    font-size: 3vw;
+
+    background-color: #2323232e;
+    border: 2px solid var(--warna-button);
+    border-radius: 20px 10px 20px 10px;
+    color: #ffffff;
+  }
+  #contact form textarea{
+    height: 18vh;
+  }
+}
+@media screen and (min-width: 600px) {
+  #contact{
+    margin: 5px auto;
+    display: flex;
+    flex-direction: row;
   }
 }
 @media screen and (min-width: 800px) {
