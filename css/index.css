@@ -189,7 +189,6 @@ header label i{
 #about #left .text{
   display: flex;
   flex-direction: column;
-  gap: 15px;
 }
 #about #left .text span{
   margin-bottom: -40px;

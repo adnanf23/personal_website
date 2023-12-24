@@ -80,7 +80,7 @@ function closeCertificate(){
   }
   if(medsoc){
     medsoc.style.zIndex = "2"
-  }
+  }ht
   
   document.body.classList.remove("disableScroll")
 }
