@@ -1,4 +1,4 @@
-const scriptURL = 'https://script.google.com/macros/s/AKfycbxf6OQCgnXvaAkqtxYlbZe66uIV2IaKCs0pw8WmJSA4ITc7snA7x2aLVqLzO3KuMCUa/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwSrg3ewtMbmjIZ3oIPnOiNxYOBs9XDvER22pb4OJAXQyin5fpAfsabdhzlNtEOLeUG/exec'
   const form = document.forms['data']
   const alertForm = document.getElementById("alertForm")
 

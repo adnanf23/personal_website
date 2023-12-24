@@ -212,11 +212,22 @@
     height: 18vh;
   }
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 580px) {
   #contact{
     margin: 5px auto;
     display: flex;
     flex-direction: row;
+  }
+  #contact form .alert{
+    width: 70%;
+    padding: 20px 15px;
+    border-radius: 23px;
+    background-color: var(--warna-button);
+    color: #000000;
+    display: none;
+  }
+  #contact form .alert p{
+    font-size: 1.7vw;
   }
 }
 @media screen and (min-width: 800px) {
@@ -282,6 +293,11 @@
   }
   #contact form label{
     font-size: 1.4vw;
+  }
+  #contact form input,
+  #contact form textarea{
+    font-size: 1.4vw;
+    width: 100%;
   }
   #contact form button{
     padding: 5px 15px;

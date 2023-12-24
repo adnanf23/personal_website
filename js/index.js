@@ -1,9 +1,9 @@
 const notif = document.getElementById("alert")
 const popupCv = document.getElementById("popup-cv")
 const popupCertificate = document.getElementById("main-contain")
-const cardCertif = document.getElementById("card-certificate")
 const header = document.getElementById("header")
 const medsoc = document.getElementById("medsoc")
+const navbar = document.getElementById("navbar")
 
 // POPUP OPEN CV
 function openCv(){
@@ -54,36 +54,34 @@ function closeNotif(){
 
 // OPEN POPUP CERTIFICATE
 function openCertificate(){
-  if(popupCertificate){
-    popupCertificate.style.visibility = "visible"
-  }
-  if(header){
-    header.style.zIndex = "0"
-  }
-  if(medsoc){
-    medsoc.style.zIndex = "-10"
-  }
   document.body.classList.add("disableScroll")
+  if (header) {
+    header.style.zIndex = "0";
+  }
+  if (medsoc) {
+    medsoc.style.zIndex = "-10";
+  }
+  if(popupCertificate) {
+    popupCertificate.style.visibility = "visible";
+  }
 }
 
 
 // CLOSE POPUP CERTIFICATE
-function closeCertificate(){
-  if(popupCertificate){
-    popupCertificate.style.visibility = "hidden"
+function closeCertificate() {
+  if (header) {
+    header.style.zIndex = "100";
   }
-  if(cardCertif){
-    cardCertif.style.display = "none"
+  if (medsoc) {
+    medsoc.style.zIndex = "2";
   }
-  if(header){
-    header.style.zIndex = "100"
+  if (popupCertificate) {
+    popupCertificate.style.visibility = "hidden";
   }
-  if(medsoc){
-    medsoc.style.zIndex = "2"
-  }
-  
-  document.body.classList.remove("disableScroll")
+
+  document.body.classList.remove("disableScroll");
 }
+
 
 
 // HEADER NAVBAR
@@ -94,3 +92,4 @@ window.addEventListener("scroll", function (){
     header.classList.remove("headerScroled")
   }
 })
+
