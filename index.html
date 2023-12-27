@@ -65,8 +65,8 @@
             </p>
           </div>
           <div class="btn">
-            <button onclick="openCv()">View CV</button>
-            <button onclick="openCertificate()">Certificate</button>
+            <button id="openCV">View CV</button>
+            <button id="openCertif">Certificate</button>
           </div>
         </div>
         <div id="right" class="right">
@@ -280,7 +280,7 @@
 
 
   <!-- POPUP CV -->
-  <div id="popup-cv">
+  <div id="popup-cv" class="nonOpened">
     <div class="container">
       <div class="close">
         <i class="fas fa-xmark" onclick="closeCv()"></i>

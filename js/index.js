@@ -4,20 +4,20 @@ const popupCertificate = document.getElementById("main-contain")
 const header = document.getElementById("header")
 const medsoc = document.getElementById("medsoc")
 const navbar = document.getElementById("navbar")
+const cvButton = document.getElementById("openCV")
+const certifButton = document.getElementById("openCertif")
+
+
 
 // POPUP OPEN CV
-function openCv(){
-if(popupCv){
-  popupCv.style.visibility = "visible"
-}
-if(header){
-  header.style.zIndex = "0"
-}
-if(medsoc){
-  medsoc.style.zIndex = "-10"
-}
-  document.body.classList.add("disableScroll")
-}
+cvButton.addEventListener("click", function (){
+  if(popupCv){
+    popupCv.style.visibility = "visible"
+    header.style.zIndex = "0"
+    medsoc.style.zIndex = "-10"
+    document.body.classList.add("disableScroll")
+  }
+})
 
 // CLOSE  CLOSE CV
 function closeCv(){
@@ -53,35 +53,28 @@ function closeNotif(){
 
 
 // OPEN POPUP CERTIFICATE
-function openCertificate(){
-  document.body.classList.add("disableScroll")
-  if (header) {
-    header.style.zIndex = "0";
-  }
-  if (medsoc) {
-    medsoc.style.zIndex = "-10";
-  }
-  if(popupCertificate) {
+certifButton.addEventListener("click", function (){
+  if(popupCertificate){
     popupCertificate.style.visibility = "visible";
+    popupCertificate.style.display = "inline";
+    header.style.zIndex = "0";
+    medsoc.style.zIndex = "-10";
+    document.body.classList.add("disableScroll")
   }
-}
+})
+
 
 
 // CLOSE POPUP CERTIFICATE
 function closeCertificate() {
-  if (header) {
-    header.style.zIndex = "100";
-  }
-  if (medsoc) {
-    medsoc.style.zIndex = "2";
-  }
   if (popupCertificate) {
     popupCertificate.style.visibility = "hidden";
+    popupCertificate.style.display = "none";
+    header.style.zIndex = "100";
+    medsoc.style.zIndex = "2";
+    document.body.classList.remove("disableScroll");
   }
-
-  document.body.classList.remove("disableScroll");
 }
-
 
 
 // HEADER NAVBAR
