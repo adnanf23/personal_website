@@ -360,6 +360,9 @@ header label i{
 #project .slider .card-project img{
   width: 100%;
 }
+#project .link-more a{
+  text-decoration: none;
+}
 
 
 
@@ -421,6 +424,11 @@ header label i{
   border-radius: 15px;
   background-color: var(--warna-button);
   transition: 0.8s;
+}
+#contact form #loading{
+  background-color: rgb(215, 215, 215);
+  color: black;
+  display: none;
 }
 #contact form button:hover{
   background-color: #000000e6;
