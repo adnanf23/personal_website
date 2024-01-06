@@ -23,6 +23,15 @@
     z-index: 1;
   }
 
+  #project .container .slider .card-project{
+    width: 50vw;
+    height: 50vw;
+    border: 3px solid var(--warna-button);
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+  }
+
   /* CONTACT */
   #contact .title-contact p{
     margin-top: -36px;

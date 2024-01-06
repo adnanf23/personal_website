@@ -23,11 +23,7 @@ cvButton.addEventListener("click", function (){
 function closeCv(){
   if(popupCv){
     popupCv.style.visibility = "hidden"
-  }
-  if(header){
     header.style.zIndex = "100"
-  }
-  if(medsoc){
     medsoc.style.zIndex = "2"
   }
   document.body.classList.remove("disableScroll")
