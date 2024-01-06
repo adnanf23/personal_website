@@ -5,6 +5,9 @@
     width: 80%;
     margin: auto;
   }
+  .circle{
+    animation-duration: 15s;
+  }
   .circle3{
     left: 0;
     top: 8 00vw;
