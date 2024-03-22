@@ -2,389 +2,258 @@
 <html lang="en">
 <head>
 
-  <!-- META TAG -->
+  <!-- meta tag -->
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- TITLE -->
-  <title>Adnan Fauzan</title>
-
-  <!-- CDN FONTAWESOME -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-  <!-- LINK CSS -->
+  <!-- css external -->
   <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="css/responsif.css">
 
-  <!-- LINK CDN AOS ANIMATE -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-
-
-  <!-- LINK ICON WEBSITE -->
-  <link rel="shortcut icon" href="Assets/LogoIcon/logo.png" type="png">
+  <!-- title -->
+  <title>Adnan Fauzan</title>
 
 </head>
 <body>
 
+  <!-- Circle -->
+  <img class="circle circle1" src="assets/circle/circle1.png" alt="">
+  <img class="circle circle2" src="assets/circle/circle2.png" alt="">
 
-
-  <!-- HEADER -->
-  <header id="header">
-    <div class="title-h">
-      <h1>_adnanf23</h1>
-    </div>
-
-    <input type="checkbox" id="check">
-    <label for="check">
-      <i class="fa-solid fa-bars" id="menu"></i>
-      <i class="fa-solid fa-close" id="close"></i>
-    </label>
-    <nav id="navbar">
-      <ul>
-        <a href="#about" onclick="navClicked()"><li>About</li></a>
-        <a href="#service" onclick="navClicked()"><li>Service</li></a>
-        <a href="#skils" onclick="navClicked()"><li>Skil</li></a>
-        <a href="#project" onclick="navClicked()"><li>Project</li></a>
-        <a href="#contact" onclick="navClicked()"><li>Contact</li></a>
-        
-      </ul>
+  <!-- header -->
+  <header>
+    <h1>_adnanf23</h1>
+    <nav>
+      <a href="#certificate">Certificate</a>
+      <a href="#skils">Skils</a>
+      <a href="#tools">Tools</a>
+      <a href="#project">Project</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
 
-    <main id="main">
+  <!-- main content -->
+  <main>
 
-      <section id="about">
-        <div data-aos="fade-up" data-aos-duration="3000" id="left" class="left">
+
+    <!-- HERO SECTION -->
+    <section id="hero">
+      <!-- Image -->
+      <div class="image">
+        <img src="assets/image/foto-profil.png" alt="foto-profil">
+      </div>
+      <!-- Text -->
+      <div class="text-hero">
+        <h1><span>Hi People</span><br>I'm Adnan Fauzan </h1>
+        <p>Junior Web Developer and UI Designer,
+          Content Creator, Founder and Lead Of Community.</p>
+      </div>
+      <!-- Icon And Button -->
+      <div class="orther-hero">
+        <div class="icon">
+          <a href="" target="_blank"><img src="assets/icon/medsos/linkdin.svg" alt=""></a>
+          <a href="" target="_blank"><img src="assets/icon/medsos/instagram.svg" alt=""></a>
+          <a href="" target="_blank"><img src="assets/icon/medsos/tiktok.svg" alt=""></a>
+          <a href="" target="_blank"><img src="assets/icon/medsos/github.svg" alt=""></a>
+        </div>
+        <button>Curriculum vitae</button>
+      </div>
+    </section>
+
+
+
+    <!-- CERTIFICATE SECTION -->
+    <section id="certificate">
+      <!-- Heading Certificate Secction -->
+      <div class="heading">
+        <h1>My <span>Certificate</span></h1>
+        <p>The Certification i achieve</p>
+      </div>
+      <!-- Certificate Content -->
+      <div class="swiper">
+        <div class="container">
+          <!-- Certificate 1 -->
+          <div class="certificate-card">
+            <img src="assets/certificate/sertifikat1.jpg" alt="">
+          </div>
+          <!-- Certificate 2 -->
+          <div class="certificate-card">
+            <img src="assets/certificate/sertifikat1.jpg" alt="">
+          </div>
+          <!-- Certificate 3   -->
+          <div class="certificate-card">
+            <img src="assets/certificate/sertifikat1.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SKILS SECTION -->
+    <section id="skils">
+      <!-- Heading Skils Section -->
+      <div class="heading">
+        <h1>My <span>Skils</span></h1>
+        <p>The skis or ability i have</p>
+      </div>
+      <!-- Card Skils Content -->
+      <div class="card-container">
+        <!-- Web Dev Skils -->
+        <div class="card-skils">
+          <div class="image-skils">
+            <img src="assets/icon/skils/webdev.svg" alt="">
+          </div>
+          <!-- Text Card -->
           <div class="text">
-            <span>Hi!</span>
-            <h2>I'm Adnan <br>Fauzan</h2>
-            <p>
-              A Junior Frontend Developer and Leader the community, I have 1 year of experience working on frontend developer projects.
-            </p>
-          </div>
-          <div class="btn">
-            <button id="openCV">View CV</button>
-            <button id="openCertif">Certificate</button>
+            <h3>Web Development</h3>
+            <p>Create a dynamic website to make it easier for users</p>
           </div>
         </div>
-        <div id="right" class="right">
-          <div data-aos="fade-up" data-aos-duration="3000" class="image">
-            <img src="Assets/image/foto.png" alt="My Photo">
-          </div>
-          <div id="medsoc" class="media-social">
-            <a href="https://www.instagram.com/_adnanf23" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://github.com/adnanf23" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/adnanf23/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://www.tiktok.com/@_adnanf23" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
 
+
+
+        <!-- UI Design Skils -->
+        <div class="card-skils">
+          <div class="image-skils">
+            <img src="assets/icon/skils/uidesign.svg" alt="">
+          </div>
+          <!-- Text Card -->
+          <div class="text">
+            <h3>UI Design</h3>
+            <p>Make design UI with design principle</p>
           </div>
         </div>
-      </section>
 
 
 
-      <img src="Assets/circle/Circle 1.png" alt="circle circle1" class="circle circle1">
-
-
-
-        <!-- SERVICE -->
-        <section id="service">
-          <div data-aos="fade-up" data-aos-duration="3000" class="title-section">
-            <h2>My <span>Service</span></h2>
-            <p>Find and see the service I have</p>
+        <!-- Editing Skils -->
+        <div class="card-skils">
+          <div class="image-skils">
+            <img src="assets/icon/skils/editing.svg" alt="">
           </div>
-    
-          <div data-aos="fade-up" data-aos-duration="3000" class="container">
-            <div class="fristAndSecond">
-    
-              <div class="card">
-                <!-- Image Card -->
-                <div class="image">
-                  <img src="Assets/image/s-webdesign.png" alt="flaticon" width="80px">
-                </div>
-                <!-- Text Card -->
-                <div class="text">
-                  <h2>Web Design</h2>
-                  <p>
-                    Create an attractive website appearance for business or organizational purposes
-                  </p>
-                </div>
-              </div>
-    
-              <div class="card">
-                <!-- Image Card -->
-                <div class="image">
-                  <img src="Assets/image/s-webinteractive.png" alt="flaticon" width="80px">
-                </div>
-                <!-- Text Card -->
-                <div class="text">
-                  <h2>Website Interactive</h2>
-                  <p>
-                    Create a dynamic website to make it easier for users
-                  </p>
-                </div>
-              </div>
-
-            </div>
-
-            <div class="card">
-              <!-- Image Card -->
-              <div class="image">
-                <img src="Assets/image/video-editor.png" alt="flaticon" width="80px">
-              </div>
-              <!-- Text Card -->
-              <div class="text">
-                <h2>Editing Video</h2>
-                <p>
-                  make videos according to the latest trend
-                </p>
-              </div>
-            </div>
+          <!-- Text Card -->
+          <div class="text">
+            <h3>UI Design</h3>
+            <p>Make videos according to the latest trend</p>
           </div>
-        </section>
+        </div>
+      </div>
+    </section>
 
 
-
-        <img src="Assets/circle/Circle 2.png" alt="" class="circle circle2">
-
-
-
-
-         <!-- SKILS -->
-        <section id="skils">
-          <div data-aos="fade-up" data-aos-duration="3000" class="title-section">
-            <h2>My <span>Skils</span></h2>
-            <p>Find and see the skils I have </p>
+    <!-- TOOLS SECTION -->
+    <section id="tools">
+      <!-- Heading Tools Section -->
+      <div class="heading">
+        <h1>My <span>Tools</span></h1>
+        <p>The tools i use</p>
+      </div>
+      <!-- Tools Content -->
+      <div class="tools-content">
+        <!-- Development Tools -->
+        <div class="toolsed">
+          <h2>Development Tools And Tech:</h2>
+          <div class="icon-tools">
+            <img src="assets/icon/tools/vscode.svg" alt="vs code">
+            <img src="assets/icon/tools/html.svg" alt="html">
+            <img src="assets/icon/tools/css.svg" alt="css">
+            <img src="assets/icon/tools/js.svg" alt="js">
+            <img src="assets/icon/tools/boostrap.svg" alt="boostrap">
+            <img src="assets/icon/tools/tailwind.svg" alt="tailwind">
+            <img src="assets/icon/tools/git.svg" alt="git">
           </div>
-
-          <div data-aos="fade-up" data-aos-duration="3000" class="container">
-
-            <div class="card">
-              <h2>Design</h2>
-              <div class="icon">
-                <img src="Assets/image/Figma.png" alt="figma" width="50px">
-                <img src="Assets/image/Illustrator.png" alt="illustrator" width="50px">
-              </div>
-              <p>
-                Layouting, color and design principle
-              </p>
-            </div>
-
-            <div class="card">
-              <h2>Editing</h2>
-              <div class="icon">
-                <img src="Assets/image/Premiere pro.png" alt="Adobe Premiere" width="50px">
-                <img src="Assets/image/After effects.png" alt="Adobe After effects" width="50px">
-              </div>
-              <p> 
-                Transition, movement and keyframe
-              </p>
-            </div>
-
-
-            <div class="card">
-              <h2>Coding</h2>
-              <div class="icon">
-                <img src="Assets/image/🦆 icon _GitHub_.png" alt="github" width="50px">
-                <img src="Assets/image/Visual studio.png" alt="VS Code" width="50px">
-                <img src="Assets/image/git 1.png" alt="Git" width="50px">
-              </div>
-              <p>
-                Html, CSS, JS, React JS and Jquery
-              </p>
-            </div>
-
+        </div>
+        <!-- Design Tools -->
+        <div class="toolsed">
+          <h2>Design Tools:</h2>
+          <div class="icon-tools">
+            <img src="assets/icon/tools/ai.svg" alt="adobe ilustrator">
+            <img src="assets/icon/tools/figma.svg" alt="figma">
           </div>
-        </section>
-
-
-
-
-        <!-- PROJECT -->
-        <section id="project">
-          <div data-aos="fade-up" data-aos-duration="3000" class="title-section">
-            <h2>My <span>Project</span></h2>
-            <p>Find and see the project I'm working on</p>
+        </div>
+        <!-- Editing Tools -->
+        <div class="toolsed">
+          <h2>Editing Tools:</h2>
+          <div class="icon-tools">
+            <img src="assets/icon/tools/pr.svg" alt="adobe premiere">
+            <img src="assets/icon/tools/ae.svg" alt="adobe after effect">
+            <img src="assets/icon/tools/capcut.svg" alt="capcut">
           </div>
+        </div>
+      </div>
+    </section>
 
-          <div data-aos="fade-up" data-aos-duration="3000" class="container">
 
-            <div class="slider">
-              <div class="card-project">
-                <img src="Assets/image/project1.png" alt="">
 
-                <div id="proj-detail">
-                  <div class="text">
-                    <p><span><b>Name :</b></span> Community Website</p> 
-                    <p><span><b>From :</b></span> GrowDev ID</p>
-                    <p><span><b>Position :</b></span> UI Design & Frontend</p>
-                   </div>
-                </div>
-              </div>
-
-            </div>
+    <!-- PROJECT SECTION -->
+    <section id="project">
+      <!-- Heading Project Section -->
+      <div class="heading">
+        <h1>My <span>Project</span></h1>
+        <p>The Project maked by me</p>
+      </div>
+      <!-- Project Content -->
+      <div class="project-content">
+        <!-- Project 1 -->
+        <div class="card-project">
+          <img src="assets/image/Slide 16_9 - 1.jpg" alt="">
+          <div class="shadow-desc">
+            <h3>Community Website</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sed quibusdam? Omnis.</p>
+            <button>View Demo</button>
           </div>
-
-          <div class="link-more" data-aos="fade-up" data-aos-duration="3000">
-            <a href=""><h2><span>More</span></h2></a>
-            <p>View all project</p>
+        </div>
+        <!-- Project 2 -->
+        <div class="card-project">
+          <img src="assets/image/Slide 16_9 - 1.jpg" alt="">
+          <div class="shadow-desc">
+            <h3>Community Website</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sed quibusdam? Omnis.</p>
+            <button>View Demo</button>
           </div>
-        </section>
-
-
-
-
-        <!-- CONTACT -->
-        <section id="contact">
-          <div data-aos="fade-up" data-aos-duration="3000" class="title-contact">
-            <h2><span>Contact</span> Me</h2>
-            <p>Contact Me if you have any needs with Me!</p>
+        </div>
+        <!-- Project 3 -->
+        <div class="card-project">
+          <img src="assets/image/Slide 16_9 - 1.jpg" alt="">
+          <div class="shadow-desc">
+            <h3>Community Website</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sed quibusdam? Omnis.</p>
+            <button>View Demo</button>
           </div>
-          <div class="form">
-            <form method="post" name="data">
-              <div id="alertForm" class="alert">
-                <p>your message has been <b>Sent!</b></p>
-              </div>
-              <label for="email">Your Email:</label>
-              <input type="email" id="email" name="Email">
-              <br>
-              <label for="message">Your Message:</label><br>
-              <textarea id="message" name="Message"></textarea><br>
-              <button id="submit" type="submit">Send</button>
-              <button id="loading" disabled>LOADING!</button>
-            </form>
-          </div>
-        </section>
+        </div>
+      </div>
+      <div class="all-porfolio">
+        <button>All Portfolio</button>
+      </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="heading-contact">
+        <h1><span>Contact</span> Me</h1>
+        <p>Contact Me if you have any needs with Me!</p>
+      </div>
+      <form action="">
+        <div class="thefield">
+          <label for="email">Your Email:</label>
+          <input type="email" id="email">
+        </div>
+        <div class="thefield">
+          <label for="email">Your Email:</label>
+          <textarea id="messege" cols="30" rows="10"></textarea>
+        </div>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
 
   </main>
-
-
-  <img src="Assets/circle/Circle 3.png" alt="" class="circle circle3" width="40%">
   
+
+
   
-  <footer>
-    <div class="medsos">
-      <h1>Adnan Fauzan</h1>
-      <div class="icon">
-        <a href=""><i class="fa-brands fa-instagram"></i></a></i>
-        <a href=""><i class="fa-brands fa-github"></i></a>
-        <a href=""><i class="fa-brands fa-linkedin"></i></a>
-        <a href=""><i class="fa-brands fa-tiktok"></i></a>
-      </div>
-    </div>
 
-    <div class="tech">
-      <h1>Tech Use:</h1>
-      <div class="icon">
-        <img src="Assets/image/Html.png" alt="html">
-        <img src="Assets/image/css-3.png" alt="html">
-        <img src="Assets/image/Js.png" alt="html">
-      </div>
-    </div>
-  </footer>
-
-  <!-- POPUP CV -->
-  <div id="popup-cv" class="nonOpened">
-    <div class="container">
-      <div class="close">
-        <i class="fas fa-xmark" onclick="closeCv()"></i>
-      </div>
-      <div class="content">
-          <img src="Assets/Cv/CV-01.jpg" alt="">
-      </div>
-      <div class="btn" onclick="openNotif()">
-        <div id="download"><i class="fa-solid fa-circle-down"></i><span>Download</span></div>
-      </div>
-    </div>
-  </div>
-
-  <div id="alert">
-    <p>silahkan pilih format yang ingin anda download</p>
-    <div class="btn">
-      <a href="Assets/Cv/CV-01.jpg" id="btn-download" download="Adnan CV.jpg" onclick="closeNotif()"><button>JPG</button></a>
-      <a href="Assets/Cv/CV.pdf" id="btn-download" download="Adnan CV.pdf" onclick="closeNotif()"><button>PDF</button></a>
-    </div>
-  </div>
-
-  <!-- POPUP CERTIFICATE -->
-  <div id="main-contain">
-    <div class="close">
-      <i class="fas fa-xmark" onclick="closeCertificate()"></i>
-    </div>
-    <div id="popup-certificate">
-      <div class="container">
-       <div id="slider" class="slider">
-  
-  
-  
-        <div class="card-certificate card">
-          <img src="Assets/certificate/sertifikat1.jpg" alt="">
-  
-          <div id="detail-certificate">
-            <div class="text">
-             <p><span><b>Name :</b></span> Memulai Dasar Pengembang Software</p> 
-             <p><span><b>From :</b></span> Dicoding Indonesia</p>
-             <p><span><b>Date :</b></span> 02 Agustus 2023</p>
-            </div>
-           </div>
-  
-        </div>
-
-        <div class="card-certificate card">
-          <img src="Assets/certificate/sertifikat3.jpg" alt="">
-  
-          <div id="detail-certificate">
-            <div class="text">
-             <p><span><b>Name :</b></span> Pengenalan Logika Pemrograman</p> 
-             <p><span><b>From :</b></span> Dicoding Indonesia</p>
-             <p><span><b>Date :</b></span> 05 Agustus 2023</p>
-            </div>
-           </div>
-        
-        </div>
-
-        <div class="card-certificate card">
-          <img src="Assets/certificate/sertifikat2.jpg" alt="">
-  
-          <div id="detail-certificate">
-            <div class="text">
-             <p><span><b>Name :</b></span> Memulai Dasar Pemrograman Web</p> 
-             <p><span><b>From :</b></span> Dicoding Indonesia</p>
-             <p><span><b>Date :</b></span> 11 Oktober 2023</p>
-            </div>
-           </div>
-  
-        </div>
-  
-  
-  
-       </div>
-      </div>
-     </div>
-   </div>
-
-
-
-
-    
-
-   <!-- JAVASCRIPT EXTERNAL -->
-  <script src="js/index.js"></script>
-  <script src="js/conectionSpreadsheets.js"></script>
-
-  <!-- CDN JS AOS ANIMATE -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-  <!-- INITIALIZE AOS ANIMATE -->
-  <script>
-    AOS.init();
-  </script>
 
 </body>
 </html>
