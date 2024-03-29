@@ -25,6 +25,9 @@ body{
   font-family: 'Poppins', sans-serif;
   color: var(--paragraph-color);
   background-color: var(--dark-text);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 
@@ -38,7 +41,8 @@ span{
 main{
   display: flex;
   flex-direction: column;
-  gap: 10vw;
+  width: 83%;
+  margin: auto;
 }
 section{
   height: 100vh;
@@ -52,7 +56,10 @@ section{
   text-align: center;
 }
 .heading h1{
-  font-size: 2.3vw;
+  font-size: 20px;
+}
+.heading p{
+  font-size: 12px;
 }
 
 
@@ -74,31 +81,49 @@ section{
 
 /* header */
 header{
-  /* padding: 15px 40px; */
+  padding: 15px;
   display: flex;
   justify-content: space-between;
   width: auto;
 }
+header #menu{
+  width: 32px;
+  height: 29px;
+  cursor: pointer;
+}
 header h1{
   color: var(--heading-color);
-  font-size: 5vw;
-  padding: 15px 40px;
+  font-size: 7vw;
+  display: flex;
 }
 header nav{
-  padding: 50px 15px;
+  padding: 15px 15px 0px;
   display: flex;
   gap: 30px;
   height: 100vh;
   background-color: #000000;
-  position: absolute;
+  position: fixed;
+  top: 0;
   flex-direction: column;
   width: 150px;
+  left: -200px;
+  transition: 0.7s ease-in-out;
+  z-index: 5;
+  box-shadow: 5px 0px 30px #000000;
+}
+header nav .close-btn{
+  display: flex;
+  justify-content: end;
+}
+header nav .close-btn #close{
+  width: 20px;
+  cursor: pointer;
 }
 header nav a{
   text-decoration: none;
   color: white;
   transition: 0.2s ease-in-out;
-  font-size: 4.2vw;
+  font-size: 17px;
 }
 header nav a:hover{
   color: var(--green-color);
@@ -108,52 +133,50 @@ header nav a:hover{
 /* hero section */
 #hero{
   justify-content: start;
+  height: auto;
 }
 #hero .image img{
-  width: 15vw;
+  width: 50vw;
 }
 #hero .text-hero{
-  text-align: center;
-  width: 500px;
   display: flex;
+  gap: 10px;
   flex-direction: column;
-  gap: 7px;
+  text-align: center;
 }
 #hero .text-hero h1{
-  font-size: 3vw;
-  line-height: 3rem;
+  font-size: 25px;
+  line-height: 28px;
 }
 #hero .text-hero p{
-  font-size: 1.3vw;
-  line-height: 1.7rem;
+  font-size: 14px;
+  line-height: 17px;
 }
 #hero .orther-hero .icon{
   display: flex;
-  gap: 25px;
+  gap: 15px;
 }
 #hero .orther-hero .icon img{
-  width: 3vw;
+  width: 30px;
 }
 #hero .orther-hero{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 10px;
+  justify-content: center;
+  gap: 15px;
 }
 #hero .orther-hero button{
-  font-size: 1.4vw;
   border: none;
-  background: var(--gradien-color);
-  width: 15vw;
-  padding: 6px 5px;
+  padding: 5px;
   border-radius: 20px;
-  font-weight: 500;
+  background-color: var(--green-color);
+  box-shadow: 0px 5px 13px #00FF66;
 }
 
 
 /* Certificate Section */
-/* #certificate .swiper{
-  width: 80%;
+#certificate .swiper{
+  width: 100%;
   overflow: hidden;
 }
 #certificate .swiper .container{
@@ -166,7 +189,7 @@ header nav a:hover{
 }
 #certificate .swiper .container .certificate-card{
   flex: 0 0 auto;
-  width: 520px;
+  width: 200px;
   border-radius: 10px;
   overflow: hidden;
   border: 2px solid #3EF803;
@@ -180,24 +203,30 @@ header nav a:hover{
 
 
 /* Skils Section */
-/* #skils{
+#skils{
+  height: 150vh;
   gap: 100px;
 }
 #skils .card-container{
   display: flex;
-  gap: 50px;
+  gap: 60px;
+  flex-direction: column;
 }
 #skils .card-container .card-skils{
   background-color: #c2f8c25a;
-  width: 16vw;
-  padding: 60px;
+  flex: 1;
+  margin: auto;
+  padding: 10px 5px;
   border-radius: 20px;
   box-shadow:0px 5px 10px #00ff66a6;
 }
 #skils .card-container .card-skils .image-skils{
   display: flex;
   justify-content: center;
-  margin-top: -130px;
+}
+#skils .card-container .card-skils .image-skils img{
+  width: 80px;
+  margin-top: -50px;
 }
 #skils .card-container .card-skils .text{
   display: flex;
@@ -206,18 +235,19 @@ header nav a:hover{
   text-align: center;
 }
 #skils .card-container .card-skils .text h3{
-  font-size: 1.7vw;
+  font-size: 19px;
 }
 #skils .card-container .card-skils .text p{
-  font-size: 1.2vw;
-} */
+  font-size: 13px;
+}
 
 
 /* Tools Section */
-/* #tools .tools-content{
+#tools .tools-content{
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 35px;
+  text-align: center;
 }
 #tools .tools-content .toolsed{
   display: flex;
@@ -226,13 +256,20 @@ header nav a:hover{
   align-items: center;
   gap: 10px;
 }
+#tools .tools-content .toolsed h2{
+  font-size: 15px;
+  line-height: 17px;
+}
 #tools .tools-content .toolsed .icon-tools{
   display: flex;
-  gap: 20px;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 #tools .tools-content .toolsed .icon-tools img{
   transition: 0.3s ease-in-out;
   animation: icon 3s ease-in-out infinite;
+  width: 40px;
 }
 @keyframes icon {
   0%{
@@ -247,30 +284,33 @@ header nav a:hover{
 }
 #tools .tools-content .toolsed .icon-tools img:hover{
   transform: scale(1.11);
-} */ 
+}
 
 
 
 /* PPROJECT SECTION */
-/* #project{
-  gap: 100px;
+#project{
+  gap: 40px;
+  height: 150vh
 }
 #project .project-content{
   display: flex;
-  gap: 80px;
+  gap: 40px;
+  flex-direction: column;
+  width: 100%;
 }
 #project .all-porfolio button{
   font-size: 1.4vw;
   border: none;
   background: var(--gradien-color);
-  width: 15vw;
-  padding: 6px 5px;
+  font-size: 14px;
+  padding: 6px 15px;
   border-radius: 20px;
-  box-shadow: 0px 10px 10px #00FF66;
+  box-shadow: 0px 6px 15px #00FF66;
 }
 #project .project-content .card-project{
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  height: 25vh;
   position: relative;
   overflow: hidden;
   border-radius: 10px;
@@ -278,10 +318,10 @@ header nav a:hover{
   border: 2px solid #3EF803;
 }
 #project .project-content .card-project:nth-child(2){
-  transform: scale(1.2);
+  transform: scale(1.05);
 }
 #project .project-content .card-project:nth-child(2):hover{
-  transform: scale(1.23);
+  transform: scale(1.10);
 }
 #project .project-content .card-project:hover{
   transform: scale(1.03);
@@ -293,8 +333,8 @@ header nav a:hover{
 #project .project-content .card-project .shadow-desc{
   position: absolute;
   width: 100%;
-  height: 85%;
-  padding: 30px;
+  height: 100%;
+  padding: 10px 30px;
   display: flex;
   gap: 10px;
   flex-direction: column;
@@ -303,45 +343,46 @@ header nav a:hover{
 
   transition: 0.6s ease-in-out;
   bottom: -500px;
-  background: linear-gradient(to top, #101010, #101010ea, #ffffff00);
+  background: linear-gradient(to top, #101010, #101010, #101010a1);
 }
 #project .project-content .card-project:hover .shadow-desc{
   bottom: 0px;
 }
 #project .project-content .card-project .shadow-desc h3{
-  font-size: 1.5vw;
+  font-size: 4.3vw;
   color: var(--heading-color);
 }
 #project .project-content .card-project .shadow-desc p{
   width: 85%;
-  font-size: 0.8vw;
+  font-size: 3.5vw;
   color: var(--paragraph-color);
 }
 #project .project-content .card-project .shadow-desc button{
-  width: 170px;
-  padding: 7px 3px;
+  font-size: 8px;
+  width: 100px;
+  padding: 2px 0px;
   background: transparent;
   margin: 10px 0px;
   border-radius: 30px;
   border: 2px solid #00FF66;
   color: #00FF66;
-} */
+}
 
 
 /* CONTACT SECTION */
-/* #contact{
+#contact{
   align-items: start;
-  padding: 0px 50px;
 }
 #contact .heading-contact h1{
-  font-size: 3vw;
+  font-size: 20px;
 }
 #contact .heading-contact p{
-  font-size: 1.5vw;
+  font-size: 12px;
 }
 #contact form{
   display: flex;
   flex-direction: column;
+  width: 100%;
   gap: 30px;
 }
 #contact form .thefield{
@@ -350,11 +391,11 @@ header nav a:hover{
   gap: 5px;
 }
 #contact form .thefield label{
-  font-size: 1.3vw;
+  font-size: 10px;
 }
-#contact form .thefield input{
-  width: 800px;
-  height: 50px;
+#contact form .thefield input,
+#contact form .thefield textarea{
+  width: 100%;
 }
 #contact form .thefield input,
 #contact form .thefield textarea{
@@ -362,16 +403,18 @@ header nav a:hover{
   background-color: #101010;
   border: 2px solid #3EF803;
   color: #ffffff;
-  padding: 5px 30px;
+  padding: 5px 6px;
 }
 #contact form button{
   width: 170px;
-  padding: 15px 3px;
+  padding: 10px 3px;
   background: transparent;
   margin: 10px 0px;
   border-radius: 30px;
+  border: none;
+  box-shadow: 0px 5px 13px #00FF66;
   background-color: #42FF00;
-} */
+}
 
 
 
