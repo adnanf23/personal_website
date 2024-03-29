@@ -27,7 +27,7 @@ body{
   background-color: var(--dark-text);
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 0px;
 }
 
 
@@ -43,6 +43,7 @@ main{
   flex-direction: column;
   width: 83%;
   margin: auto;
+  z-index: 5;
 }
 section{
   height: 100vh;
@@ -85,6 +86,15 @@ header{
   display: flex;
   justify-content: space-between;
   width: auto;
+  transition: 0.4s ease-in-out;
+  z-index: 20;
+  margin-top: -10px;
+}
+.header-scrolled{
+  background-color: #101010;
+  position: sticky;
+  top: 0px;
+  box-shadow: 0px 10px 20px #000000a3;
 }
 header #menu{
   width: 32px;
@@ -106,7 +116,7 @@ header nav{
   top: 0;
   flex-direction: column;
   width: 150px;
-  left: -200px;
+  left: -300px;
   transition: 0.7s ease-in-out;
   z-index: 5;
   box-shadow: 5px 0px 30px #000000;
@@ -156,8 +166,13 @@ header nav a:hover{
   display: flex;
   gap: 15px;
 }
-#hero .orther-hero .icon img{
+#hero .orther-hero .icon a img{
   width: 30px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+#hero .orther-hero .icon a img:hover{
+  transform: scale(1.2);
 }
 #hero .orther-hero{
   display: flex;
@@ -171,6 +186,10 @@ header nav a:hover{
   border-radius: 20px;
   background-color: var(--green-color);
   box-shadow: 0px 5px 13px #00FF66;
+  transition: 0.4s ease-in-out;
+}
+#hero .orther-hero button:hover{
+  box-shadow: 0px 0px 30px #00FF66;
 }
 
 
@@ -198,6 +217,7 @@ header nav a:hover{
 #certificate .swiper .container .certificate-card img{
   width: 100%;
   height: 100%;
+  image-resolution: 700dpi;
 }
 
 
@@ -298,6 +318,7 @@ header nav a:hover{
   gap: 40px;
   flex-direction: column;
   width: 100%;
+  align-items: center;
 }
 #project .all-porfolio button{
   font-size: 1.4vw;
@@ -307,6 +328,10 @@ header nav a:hover{
   padding: 6px 15px;
   border-radius: 20px;
   box-shadow: 0px 6px 15px #00FF66;
+  transition: 0.7s ease-in-out;
+}
+#project .all-porfolio button:hover{
+  box-shadow: 0px 0px 25px #00FF66;
 }
 #project .project-content .card-project{
   width: 100%;
@@ -371,7 +396,10 @@ header nav a:hover{
 
 /* CONTACT SECTION */
 #contact{
-  align-items: start;
+  justify-content: center;
+}
+#contact .heading-contact{
+  width: 100%;
 }
 #contact .heading-contact h1{
   font-size: 20px;
@@ -393,9 +421,9 @@ header nav a:hover{
 #contact form .thefield label{
   font-size: 10px;
 }
-#contact form .thefield input,
-#contact form .thefield textarea{
+#contact form .thefield input{
   width: 100%;
+  height: 20px;
 }
 #contact form .thefield input,
 #contact form .thefield textarea{
@@ -404,6 +432,7 @@ header nav a:hover{
   border: 2px solid #3EF803;
   color: #ffffff;
   padding: 5px 6px;
+  width: 100%;
 }
 #contact form button{
   width: 170px;
@@ -415,10 +444,3 @@ header nav a:hover{
   box-shadow: 0px 5px 13px #00FF66;
   background-color: #42FF00;
 }
-
-
-
-
-/* RESPONSIF */
-
-/* Screen Max-width 1000 */

@@ -1,548 +1,325 @@
-
-/* GENERAL */
-@media screen and (min-width: 200px) and (max-width: 520px){
-  .card{
-    width: 80%;
-    margin: auto;
-  }
-  .circle{
-    animation-duration: 15s;
-  }
-  .circle3{
-    left: 0;
-    top: 8 00vw;
-  }
-
-
-  /* ABOUT */
-  #about #left .text span{
-    margin-bottom: -20px;
-  }
-  #about #right .image img{
-    transform: translate(0rem, -0.2rem);
-  }
-
-  #about #right .media-social{
-    z-index: 1;
-  }
-
-  #project .container .slider .card-project{
-    width: 50vw;
-    height: 50vw;
-    border: 3px solid var(--warna-button);
-    border-radius: 20px;
-    overflow: hidden;
-    position: relative;
-  }
-
-  /* CONTACT */
-  #contact .title-contact p{
-    margin-top: -36px;
-  }
-}
-@media screen and (min-width: 520px){
-  section{
-    padding: 10px;
-    margin: 50px 0px 0px 0px;
-  }
-  span{
-    color: var(--warna-button);
-    font-size: 1.8vw;
-  }
-  h2{
-    color: var(--warna-heading);
-    font-size: 2vw;
-  }
-  p{
-    color: var(--warna-paragraft);
-    font-size: 1.3vw;
-  }
-  .card{
-    padding: 20px;
-    width: 20vw;
-    background-color: #2323232e;
-    border: 2px solid var(--warna-button);
-    border-radius: 20px 10px 20px 10px;
-    display: flex;
-    gap: 10px;
-  }
-
-  /* Circle */
-  .circle{
-    width: 60%;
-    opacity: 70%;
-  }
-  .circle1{
-  left: 0;
-  top: 3vw;
-  }
-  .circle2{
-    top: 110vw;
-    right: 0;
-  }
-  .circle3{
-    left: 0;
-    top: 300vw;
-  }
-
-    /* HEADER */
-    header .title h1{
-      font-size: 3.5vw;
-    }
-
-
-  /* About */
-  #about{
-    flex-direction: row;
-  }
-  #about #left .text span{
-    font-size: 1.9vw;
-    margin-bottom: -13px;
-  }
-  #about #right .media-social{
-    margin-top: -4vw;
-    z-index: -200;
-  }
-  #about #right .media-social i{
-    font-size: 3.3vw;
-    color: var(--warna-button);
-    position: absolute;
-    margin-top: -1vw;
-  }
-  #about #right .media-social .fa-instagram{
-    right: 26vw;
-    top: 6vw;
-  }
-  #about #right .media-social .fa-github{
-    right: 31vw;
-    top: 13vw;
-  }
-  #about #right .media-social .fa-linkedin{
-    right: 31vw;
-    top: 21vw;
-  }
-  #about #right .media-social .fa-tiktok{
-    left: 69vw;
-    top: 27vw;
-  }
-  #about #left .btn{
-    padding: 5px 0px;
-  }
-  #about #left .btn button{
-    padding: 5px 10px;
-    border: none;
-    border-radius: 15px;
-    font-size: 1vw;
-    background-color: var(--warna-button);
-  }
-  #about #right .image{
-    width: 60%;
-  }
-
-
-
-  /* Service */
-  #service{
-    gap: 10px;
-  }
-  #service .container .fristAndSecond{
-    display: flex;
-    flex-direction: row;
+@media screen and (min-width: 320px) and (max-width: 450px) {
+  body{
     gap: 50px;
   }
-  #service .card .text p,
-  #service .card .text h2{
-    font-size: 1.4vw;
-  }
-  #service .card .image{
-    display: flex;
-    justify-content: center;
-  }
-  #service .card .image img{
-    width: 50%;
-    height: 80%;
-    object-fit: contain;
-    margin: auto;
-  }
-
-
-  /* Skils */
-  #skils .container{
-    margin: auto;
-    flex-direction: row;
-    flex-wrap:wrap-reverse
-  }
-  #skils .container .card h2{
-    font-size: 4vw;
-  }
-  #skils .container .card p{
-    font-size: 2vw;
-  }
-  #skils .card .icon img{
-    width: 20%;
-  }
-
-
-  /* Project */
-  #project .slider .card-project{
-    width: 30vw;
-    height: 30vw;
-    border: 3px solid var(--warna-button);
-    border-radius: 20px;
-    overflow: hidden;
-  }
-
-
-  /* Contact */
-  #contact{
-    margin: 5px auto;
-    display: flex;
-    flex-direction: column;
-  }
-  #contact .title-contact h2,
-  #contact .title-contact span{
-    font-size: 6vw;
-  }
-  #contact .title-contact p{
-    font-size: 3vw;
-    margin-top: -46px;
-  }
-  #contact form input,
-  #contact form textarea{
-    width: 80%;
-    height: 5vh;
-    margin: auto;
-    padding: 5px 15px;
-    font-size: 3vw;
-
-    background-color: #2323232e;
-    border: 2px solid var(--warna-button);
-    border-radius: 20px 10px 20px 10px;
-    color: #ffffff;
-  }
-  #contact form textarea{
-    height: 18vh;
-  }
-}
-@media screen and (min-width: 580px) {
-  #contact{
-    margin: 5px auto;
-    display: flex;
-    flex-direction: row;
-  }
-  #contact form .alert{
-    width: 70%;
-    padding: 20px 15px;
-    border-radius: 23px;
-    background-color: var(--warna-button);
-    color: #000000;
-    display: none;
-  }
-  #contact form .alert p{
-    font-size: 1.7vw;
-  }
-}
-@media screen and (min-width: 800px) {
-  .circle3{
-    left: 0;
-    top: 140vw;
-  }
-
-  section{
-    margin: 30px 0px;
-  }
-
-  #about, #service, #skils, #project, #contact{
-    padding: 35px 0px;
-  }
-
-  /* ABOUT */
-  #about{
-    flex-direction: row;
-  }
-  #about #right .media-social i{
-    margin-top: -3vw;
-    transform: translate(1px, 130px);
-  }
-  #about #right .image{
-    transform: translate(-10px, 0px);
-  }
-
-
-  /* SERVICE */
-  #service .container{
-    flex-direction: row;
-  }
-  #service .card .text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex: 1;
-  }
-
-  /* SKILS */
-  #skils .container .card h2{
-    font-size: 2.3vw;
-  }
-  #skils .container .card p{
-    font-size: 1.8vw;
-  }
-
-  /* PROJECT */
-  #project .slider .card-project{
-    width: 20vw;
-    height: 20vw;
-  }
-
-  /* CONTACT */
-  #contact .title-contact h2,
-  #contact .title-contact span{
-    font-size: 3.3vw;
-  }
-  #contact .title-contact p{
-    padding: 20px 20px 20px 0px;
-    font-size: 2vw;
-  }
-  #contact form label{
-    font-size: 1.4vw;
-  }
-  #contact form input,
-  #contact form textarea{
-    font-size: 1.4vw;
-    width: 100%;
-  }
-  #contact form button{
-    padding: 5px 15px;
-    border: none;
-    border-radius: 15px;
-    font-size: 1.6vw;
-    background-color: var(--warna-button);
-  }
-
-  /* FOOTER */
-  footer{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-  footer .medsos h1,
-  footer .tech h1{
-    font-size: 4vw;
-  }
-  footer .tech .icon img{
-    width: 3.5vw;
-    object-fit: fill;
-  }
-  footer .medsos .icon i{
-    color: var(--warna-button);
-    font-size: 3.5vw;
-  }
-
-
-
-  #popup-certficate{
-    height: 100vh;
-    margin: auto;
-  }
-  #popup-certficate .container{
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-/* RESPONSIVE MEDIASOCIAL */
-@media screen and (min-width: 520px) and (max-width: 700px){
-  #about #right .media-social i{
-    font-size: 4vw;
-  }
-  #about #right .media-social i{
-    transform: translate(-2px, 100px);
-  }
-  #about #right .image{
-    transform: translate(15px, -30px);
-  } 
-  #about #right .media-social{
-    z-index: 1;
-  }
-}
-@media screen and (min-width: 700px) and (max-width: 760px){
-  #about #right .media-social i{
-    font-size: 4vw;
-  }
-  #about #right .media-social i{
-    transform: translate(-6px, 90px);
-  }
-  #about #right .image{
-    transform: translate(10px, -20px);
-  }
-  #about #right .media-social{
-    z-index: 10;
-  }
-}
-@media screen and (min-width: 760px)  and (max-width: 800px){
-  #about #right .media-social i{
-    font-size: 4vw;
-  }
-  #about #right .media-social i{
-    transform: translate(-8px, 80px);
-  }
-  #about #right .image{
-    transform: translate(10px, -15px);
-  }
-  #about #right .media-social{
-    z-index: 10;
-  }
-}
-@media screen and (min-width: 800px) and (max-width: 1000px){
-  #about #right .media-social i{
-    font-size: 3.7vw;
-  }
-  #about #right .media-social i{
-    transform: translate(-20px, 110px);
-  }
-  #about #right .image img{
-    transform:  translate(10px, -30px);
-  }
-  #about #right .media-social{
-    z-index: 10;
-  }
-}
-@media screen and (min-width: 1000px) and (max-width: 1200px) {
-  #about #right .media-social i{
-    font-size: 3.7vw;
-  }
-  #about #right .media-social i{
-    transform: translate(-20px, 100px);
-  }
-  #about #right .media-social{
-    z-index: 10;
-  }
-  #about #right .image img{
-    transform: translate(10px, -38px);
-  }
-}
-@media screen and (min-width: 1200px){
-  #about #right .media-social i{
-    font-size: 3.7vw;
-  }
-  #about #right .media-social i{
-    transform: translate(-20px, 100px);
-  }
-  #about #right .media-social{
-    z-index: 10;
-  }
-  #about #right .image img{
-    transform: translate(20px, -20px);
-  }
-}
-
-/* NAVBAR */
-@media screen and (min-width: 700px){
-  #menu,
-  #close{
-    display: none;
-  }
-  header{
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 30px;
-    margin-top: -20px;
-  }
-  header .title-h{
-    width: 40%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-  }
-  header .title-h h1{
-    font-size: 2vw;
-  }
-  header nav{
-    position: static;
-    opacity: 100;
-    background-color: transparent;
-    padding: 0px;
-    transition:none;
-    z-index: 0;
-  }
-  header nav ul{
-    flex-direction: row;
-    gap: 20px;
-    font-size: 1.4vw;
-    justify-content: end;
-  }
-}
-
-
-/* POPUP */
-@media screen and (min-width: 350px) and (max-width: 600px){
-  #popup-cv .container .content{
-    width: 70%;
-    height: 80%;
-  }
-  #popup-cv .container .btn #download span{
-    font-size: 5vw;
-  }
-  #popup-cv .container .btn #download i{
-    color: var(--warna-button);
-    font-size: 5vw;
-  }
-  #popup-cv .container .close{
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    font-size: 6vw;
-    color: var(--warna-button);
+  /* Header */
+  header h1{
+    font-size: 19px;
+  }
+  header #menu{
+    width: 28px;
+    height: 23px;
     cursor: pointer;
   }
 
+  /* Skils */
+  #skils{
+    height: auto;
+  }
+  #skils .card-container .card-skils{
+    width: 250px;
+    height: 260px;
+    margin: auto;
+  }
 
-  #popup-certificate .container .slider .card{
-    width: 80vw;
+  /* Project */
+  #project{
+    height: auto;
   }
-  #popup-certificate .container .slider .card #detail-certificate .text{
-    width: 80%;
-    font-size: 4vw;
+  #project .project-content .card-project{
+    width: 250px;
+    height: 250px;
   }
-  #popup-certificate .container .slider .card #detail-certificate .text p{
-    font-size: 4vw;
+  #project .project-content .card-project .shadow-desc h3{
+    font-size: 20px;
+    color: var(--heading-color);
   }
-  #main-contain .close i{
-    font-size: 7vw;
+  #project .project-content .card-project .shadow-desc p{
+    width: 85%;
+    font-size: 13px;
+    color: var(--paragraph-color);
+  }
+  #project .project-content .card-project .shadow-desc button{
+    font-size: 13px;
+    width: 140px;
+  }
+
+  /* Contact */
+  #contact{
+    height: 120vh;
+  }
+
+}
+@media screen and (min-width: 455px) and (max-width: 899px) {
+  .heading h1{
+    font-size: 28px;
+  }
+  .heading p{
+    font-size: 24px;
+  }
+
+  /* Header */
+  header h1{
+    font-size: 24px;
+  }
+  header #menu{
+    width: 30px;
+    height: 28px;
+  }
+  header nav{
+    width: 200px;
+  }
+  header nav a{
+    font-size: 23px;
+  }
+
+  /* Hero Section */
+  #hero .image img{
+    width: 30vw;
+  }
+  #hero .text-hero{
+    width: 400px;
+  }
+  #hero .text-hero h1{
+    font-size: 33px;
+    line-height: 36px;
+  }
+  #hero .text-hero p{
+    font-size: 19px;
+    line-height: 23px;
+  }
+  #hero .orther-hero .icon a img{
+    width: 40px;
+  }
+  #hero .orther-hero button{
+    font-size: 20px;
+  }
+
+  /* Certificate */
+  #certificate .swiper .container .certificate-card{
+    width: 560px;
+  }
+
+  /* Skils */
+  #skils .card-container .card-skils{
+    flex: 0;
+    width: 300px;
+    height: 300px;
+  }
+  #skils .card-container .card-skils .image-skils img{
+    width: 100px;
+    margin-top: -50px;
+  }
+  #skils .card-container .card-skils .text h3{
+    font-size: 27px;
+  }
+  #skils .card-container .card-skils .text p{
+    font-size: 20px;
+  }
+
+  /* Tools */
+  #tools .tools-content .toolsed h2{
+    font-size: 25px;
+    line-height: 28px;
+  }
+  #tools .tools-content .toolsed .icon-tools img{
+    transition: 0.3s ease-in-out;
+    animation: icon 3s ease-in-out infinite;
+    width: 70px;
+  }
+
+  /* Project */
+  #project{
+    height: 200vh;
+  }
+  #project .project-content .card-project{
+    width: 400px;
+    height: 400px;
+  }
+  #project .project-content .card-project .shadow-desc h3{
+    font-size: 30px;
+  }
+  #project .project-content .card-project .shadow-desc p{
+    width: 85%;
+    font-size: 20px;
+    color: var(--paragraph-color);
+  }
+  #project .project-content .card-project .shadow-desc button{
+    font-size: 20px;
+    width: 140px;
+  }
+
+  /* Contact */
+  #contact .heading-contact h1{
+    font-size: 28px;
+  }
+  #contact .heading-contact p{
+    font-size: 24px;
+  }
+  #contact form .thefield label{
+    font-size: 20px;
+  }
+  #contact form .thefield input{
+    width: 450px;
+    height: 50px;
+  }
+  #contact form .thefield input,
+  #contact form .thefield textarea{
+    border-radius: 24px;
+    width: 450px;
   }
 }
-@media screen and (min-width: 600px) {
-  #popup-cv .container .content{
-    width: 70%;
-    height: 9 0%;
+@media screen and (min-width: 900px) {
+  .heading h1{
+    font-size: 30px;
   }
-  #popup-cv .container .btn #download span{
-    font-size: 3vw;
+  .heading p{
+    font-size: 20px;
   }
-  #popup-cv .container .btn #download i{
-    color: var(--warna-button);
-    font-size: 3vw;
+
+  /* Header */
+  header{
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 15px 30px;
+  }
+  header #menu{
+    display: none;
+  }
+  header h1{
+    font-size: 20px;
+  }
+  header nav{
+    display: flex;
+    gap: 30px;
+    height: auto;
+    width: auto;
+    background: transparent;
+    right: 0;
+    position: static;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: 0.7s ease-in-out;
+    z-index: 5;
+    box-shadow: 0px 0px 0px #000000;
+  }
+  header nav a{
+    position: relative;
+  }
+  header nav .close-btn{
+    display: none;
   }
 
 
-  #popup-certificate .container .slider .card{
-    width: 40vw;
-  }
-  #popup-certificate .container .slider .card #detail-certificate .text{
-    width: 80%;
-    font-size: 2.3vw;
-  }
-  #popup-certificate .container .slider .card #detail-certificate .text p{
-    font-size: 2.3vw;
-  }
-  #popup-certificate .container .slider .card #detail-certificate .text p span{
-    font-size: 2.3vw;
-  }
-  #main-contain .close i{
-    font-size: 6vw;
-  }
+    /* Hero Section */
+    #hero .image img{
+      width: 300px;
+    }
+    #hero .text-hero{
+      width: 500px;
+    }
+    #hero .text-hero h1{
+      font-size: 40px;
+      line-height: 42px;
+    }
+    #hero .text-hero p{
+      font-size: 20px;
+      line-height: 22px;
+    }
+    #hero .orther-hero .icon a img{
+      width: 50px;
+    }
+    #hero .orther-hero button{
+      font-size: 23px;
+    }
+
+    /* Certificate */
+    #certificate{
+      height: 105vh;
+    }
+    #certificate .swiper .container .certificate-card{
+      width: 600px;
+    }
+
+    /* Skils */
+    #skils{
+      height: 90vh;
+    }
+    #skils .card-container{
+      display: flex;
+      gap: 60px;
+      flex-direction: row;
+    }
+    #skils .card-container .card-skils .image-skils img{
+      width: 140px;
+      margin-top: -80px;
+    }
+    #skils .card-container .card-skils .text{
+      width: 80%;
+      margin: auto;
+    }
+    #skils .card-container .card-skils .text h3{
+      font-size: 20px;
+    }
+    #skils .card-container .card-skils .text p{
+      font-size: 18px;
+    }
+
+    /* Tools */
+    #tools{
+      height: 90vh;
+    }
+    #tools .tools-content .toolsed h2{
+      font-size: 30px;
+      line-height: 32px;
+    }
+    #tools .tools-content .toolsed .icon-tools img{
+      width: 60px;
+    }
+
+    /* Project */
+    #project .project-content{
+      display: flex;
+      flex-direction: row;
+    }
+    #project .project-content .card-project{
+      width: 400px;
+      height: 400px;
+    }
+    #project .project-content .card-project .shadow-desc h3{
+      font-size: 25px;
+    }
+    #project .project-content .card-project .shadow-desc p{
+      width: 85%;
+      font-size: 19px;
+    }
+    #project .project-content .card-project .shadow-desc button{
+      font-size: 20px;
+      width: 140px;
+    }
+    #project .all-porfolio button{
+      font-size: 18px;
+    }
+    
+    /* Contact */
+    #contact .heading-contact h1{
+      font-size: 28px;
+    }
+    #contact .heading-contact p{
+      font-size: 24px;
+    }
+    #contact form .thefield label{
+      font-size: 20px;
+    }
+    #contact form .thefield input{
+      width: 450px;
+      height: 50px;
+    }
+    #contact form .thefield input,
+    #contact form .thefield textarea{
+      border-radius: 24px;
+      width: 450px;
+    }
 }
