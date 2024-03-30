@@ -50,11 +50,12 @@ downloadedCv.forEach(button => {
 });
 
 openCvButton.addEventListener("click", () => {
-  openCv()
+  openCv();
 })
 
 closeCvButton.addEventListener("click", () => {
-  closeCv()
+  closeCv();
+  closeDownload();
 })
 
 
