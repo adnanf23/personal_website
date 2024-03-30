@@ -28,6 +28,7 @@ body{
   display: flex;
   flex-direction: column;
   gap: 0px;
+  position: relative;
 }
 
 
@@ -93,7 +94,7 @@ header{
 .header-scrolled{
   background-color: #101010;
   position: sticky;
-  top: 0px;
+  top: -10px;
   box-shadow: 0px 10px 20px #000000a3;
 }
 header #menu{
@@ -187,6 +188,7 @@ header nav a:hover{
   background-color: var(--green-color);
   box-shadow: 0px 5px 13px #00FF66;
   transition: 0.4s ease-in-out;
+  cursor: pointer;
 }
 #hero .orther-hero button:hover{
   box-shadow: 0px 0px 30px #00FF66;
@@ -443,4 +445,98 @@ header nav a:hover{
   border: none;
   box-shadow: 0px 5px 13px #00FF66;
   background-color: #42FF00;
+}
+
+#cv{
+  background-color: #000000e8;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 99;
+  display: none;
+}
+#cv .close{
+  position: absolute;
+  top: 30px;
+  right: 50px;
+}
+#cv .close img{
+  width: 30px;
+  cursor: pointer;
+}
+#cv .container{
+  width: 100%;  
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#cv .container .curriculum{
+  width: 80%;
+  margin: auto;
+}
+#cv .container .curriculum img{
+  width: 100%;
+}
+#cv .container .btn button{
+  width: 170px;
+  padding: 10px 3px;
+  background: transparent;
+  margin: 10px 0px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0px 5px 13px #00FF66;
+  cursor: pointer;
+  background-color: #42FF00;
+  transition: 0.3s ease-in-out;
+}
+#cv .container .btn button:hover{
+  box-shadow: 0px 0px 20px #00FF66;
+}
+
+#download{
+  width: auto;
+  height: auto;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: fixed;
+  z-index: 200;
+  border: 2px solid #00FF66;
+  background-color: #101010;
+  border-radius: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 30px #000000;
+  transition: 0.7s ease-in-out;
+  display: none;
+}
+#download .btn{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+#download .btn .downloaded{
+  width: 140px;
+  padding: 10px 3px;
+  background: transparent;
+  margin: 10px 0px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  background-color: #42FF00;
+  transition: 0.1s ease-in-out;
+}
+#download .btn button:hover{
+  background-color: #000000;
+  border: 2px solid #3EF803;
+  color: #ffffff;
 }
