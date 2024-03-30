@@ -48,6 +48,11 @@
   #contact{
     height: 120vh;
   }
+  #contact form .alert{
+    width: 90%;
+    padding: 10px 10px;
+    border-radius: 12px;
+  }
 
   /* Download */
   #download{
@@ -166,6 +171,11 @@
   }
 
   /* Contact */
+  #contact form .alert{
+    width: 90%;
+    padding: 20px 10px;
+    border-radius: 12px;
+  }
   #contact .heading-contact h1{
     font-size: 28px;
   }
@@ -346,6 +356,11 @@
     }
     
     /* Contact */
+    #contact form .alert{
+      width: 40%;
+      padding: 10px 10px;
+      border-radius: 12px;
+    }
     #contact .heading-contact h1{
       font-size: 28px;
     }

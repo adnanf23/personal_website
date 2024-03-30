@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 
 
@@ -7,7 +7,6 @@
   margin: 0px;
   scroll-behavior: smooth;
 }
-
 /* ROOT VARIABLE! */
 :root{
   --heading-color: #ffffff;
@@ -400,6 +399,17 @@ header nav a:hover{
 #contact{
   justify-content: center;
 }
+#contact form .alert{
+  width: 20%;
+  padding: 20px 15px;
+  border-radius: 23px;
+  background-color: var(--green-color);
+  color: #000000;
+  display: none;
+}
+#contact form #loading{
+  display: none;
+}
 #contact .heading-contact{
   width: 100%;
 }
@@ -435,6 +445,7 @@ header nav a:hover{
   color: #ffffff;
   padding: 5px 6px;
   width: 100%;
+  font-size: 1.4vw;
 }
 #contact form button{
   width: 170px;
