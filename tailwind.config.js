@@ -24,6 +24,8 @@ export default {
       'orange' : '#FF9255',
       'box' : '#1E1E1E',
       'transparent' : 'transparent',
+      'overFrom' : "rgba(30, 30, 30, 0.9)",
+      'overTo' : '#1E1E1E',
     },
     fontFamily: {
       poppins : ["Poppins", 'sans-serif'],

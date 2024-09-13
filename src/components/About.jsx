@@ -6,7 +6,7 @@ function About() {
     <div
       id="about"
       className="
-                w-[100%] flex flex-col gap-[20px] justify-center h-[100vh]  mt-[170px]
+                w-[100%] flex flex-col gap-[20px] justify-center h-[110vh]  m-auto
                 md:mt-[470px]
                 lg:mt-[500px] lg:gap-[100px]
                 "

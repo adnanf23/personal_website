@@ -8,7 +8,7 @@ import Project from "./Project.jsx";
 function Main() {
   return (
     <main
-      className="px-14 
+      className="px-14
                 md:px-14 z-[-1]
                 lg:px-60"
     >
@@ -17,7 +17,7 @@ function Main() {
         src={Profil}
         alt=""
         className=" 
-                w-[100%] absolute z-[-3] top-100 left-0 mx-auto  mt-[-20px]
+                w-[100%] absolute z-[-3] top-100 left-0 mx-auto  mt-[-200px]
                 lg:w-[100%]
             "
       />

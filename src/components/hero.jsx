@@ -10,22 +10,22 @@ const dataMedsos = [
   {
     name: "github",
     img: githubIcon,
-    src: "",
+    src: "https://github.com/adnanf23/",
   },
   {
     name: "instagram",
     img: instaramIcon,
-    src: "",
+    src: "https://www.instagram.com/_adnanf23/",
   },
   {
     name: "linkedin",
     img: linkedinIcon,
-    src: "",
+    src: "https://www.linkedin.com/in/adnanf23/",
   },
   {
     name: "tiktok",
     img: tiktokIcon,
-    src: "",
+    src: "https://www.tiktok.com/@_adnanf23",
   },
 ];
 
@@ -33,7 +33,7 @@ function Hero() {
   return (
     <div
       className="
-                pt-0 flex flex-col gap-[20px] h-[70vh]
+                pt-0 flex flex-col gap-[20px] h-[100vh]
                 lg:pt-0 items-center justify-center
                 "
     >
@@ -51,7 +51,7 @@ function Hero() {
         "
       >
         {dataMedsos.map((item, index) => (
-          <a key={index} href={item.src}>
+          <a key={index} href={item.src} target="_blank">
             <img
               src={item.img}
               alt={item.name}
@@ -64,7 +64,7 @@ function Hero() {
           </a>
         ))}
       </div>
-      <Button value={"Get My Cv"} />
+      <Button value={"Get My Cv"} bg="#5AB9FD"/>
     </div>
   );
 }

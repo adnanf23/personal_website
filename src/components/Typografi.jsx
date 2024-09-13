@@ -39,6 +39,13 @@ export const typografiData = [
     align: "center",
     paragraph: "Practice skills with practice and work projects",
   },
+  {
+    heading: "To join the community and collaborate",
+    span: "",
+    spanColor: "",
+    align: "left",
+    paragraph: "Be part of the growing movement of technology enthusiasts, please contact me."
+  }
 ];
 
 function Typografi({ items }) {

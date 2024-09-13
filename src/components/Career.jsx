@@ -6,7 +6,7 @@ function Career (){
         <div
             id="career" 
             className="
-                        w-[100%] flex flex-col gap-10 h-[100vh] justify-center
+                        w-[100%] flex flex-col gap-10 h-[130vh] justify-center
                         lg:w-[50%]
                         "
         >

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import logo from "../assets/logo.png";
 import iconMenu from "../assets/Menu.png";
 import iconClose from "../assets/close.png";
@@ -13,19 +13,49 @@ const listBars = [
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen((prev) => !prev);
   };
 
+
+  useEffect(() => {
+    
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+
+
   return (
-    <header className="lg:bg-transparent">
-      <div className="icon lg:hidden" onClick={toggleMenu}>
+    <header className={`
+                      transition-all duration-[500ms] z-[1]
+                      ${isScrolled ? "bg-bg fixed shadow-2xl" : "bg-transparent static"}
+                      `}
+    >
+      <div className="
+                    icon lg:hidden
+                    " 
+           onClick={toggleMenu}>
         <img
           src={iconMenu}
           alt="Menu icon"
           className={`w-[8vw] z-10
                       ${isOpen ? "rotate-90 opacity-0" : "rotate-0 opacity-100"}
+                      ${isScrolled ? "shadow-box shadow-md" : ""}
                       fixed top-5 right-5 duration-700 md:w-[7vw]`}
         />
         <img
@@ -75,7 +105,7 @@ function NavBar() {
             </li>
           ))}
         </ul>
-        <Button value={"Contact"} />
+        <Button value={"Contact"} href='#footer' bg='#5AB9FD' />
       </nav>
     </header>
   );

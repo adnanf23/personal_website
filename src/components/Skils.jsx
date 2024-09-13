@@ -34,7 +34,7 @@ function Skils() {
     <div
       id="skils"
       className="
-                w-[90%] h-[95vh]
+                w-[100%] h-[130vh] m-auto
                 flex flex-col gap-14 justify-center items-center
                 lg:flex-row lg:gap-60 lg:w-[100%]
                 "
@@ -46,7 +46,7 @@ function Skils() {
                 "
       >
         <Typografi items={[typografiData[2]]} />
-        <Button value={"Certificate"} />
+        <Button value={"Certificate"} bg="#5AB9FD" />
       </div>
       <div
         className="
