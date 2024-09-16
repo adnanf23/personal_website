@@ -1,7 +1,22 @@
 import Typografi, {typografiData} from "./Typografi";
 import LogoPojoksatu from "../assets/Logo Pojoksatu.png";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import React, {useEffect} from "react";
 
 function Career (){
+    const {ref, inView} = useInView({threshold: 0.1, triggerOnce: false})
+    const animation = useAnimation()
+  
+    useEffect(() =>{
+      if(inView){
+        animation.start({opacity:1, y:0})
+      } else {
+        animation.start({opacity:0, y:50})
+      }
+    },[inView, animation])
+
+
     return (
         <div
             id="career" 
@@ -17,17 +32,27 @@ function Career (){
                         flex flex-col gap-1
                         "
             >
-                <p className="
+                <motion.p
+                ref={ref}
+                className="
                             font-poppins text-paragraph mb-[-7px]
                             "
+                initial={{opacity: 0, y: 50}}
+                animate={animation}
+                transition={{delay: 1, duration: 0.8}}
                 >
                     current career :
-                </p>
-                <div className="
+                </motion.p>
+                <motion.div
+                ref={ref}
+                className="
                            bg-box py-3 px-5 shadow-md rounded-[8px]
                            md:w-[400px]
                            lg:w-[300px]
                             "
+                initial={{opacity: 0, y: 50}}
+                animate={animation}
+                transition={{delay: 1.5, duration: 0.8}}
                 >
                     <div className="
                                  title flex items-center gap-3
@@ -69,7 +94,7 @@ function Career (){
                     >
                     As a video editor whose job is to create the latest and viral news videos.
                     </p>
-                </div>
+                </motion.div>
             </div>
         </div>
     )

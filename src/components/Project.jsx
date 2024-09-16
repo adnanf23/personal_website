@@ -2,6 +2,9 @@ import Typografi, { typografiData } from "./Typografi";
 import CalcuProj from "../assets/project1.jpg";
 import { useState } from "react";
 import Button from "./Button";
+import { motion, useAnimation } from "framer-motion";
+import React, {useEffect} from "react";
+import { useInView } from "react-intersection-observer";
 
 const dataProject = [
   {
@@ -18,6 +21,16 @@ const dataProject = [
 
 function Project() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
+  const {ref, inView} = useInView({threshold: 0.1, triggerOnce: false})
+  const animation = useAnimation()
+
+  useEffect(() =>{
+    if(inView){
+      animation.start({opacity:1, y:0})
+    } else {
+      animation.start({opacity:0, y:50})
+    }
+  },[inView, animation])
 
   return (
     <div
@@ -32,19 +45,23 @@ function Project() {
       </div>
       <div className="flex flex-col gap-10 lg:flex-row">
         {dataProject.map((item, index) => (
-          <div
+          <motion.div
+            ref={ref}
             key={index}
             className="
-              bg-heading overflow-hidden relative w-[100%] rounded-[20px] z-[0]
+              bg-heading overflow-hidden relative w-[100%] rounded-[10px] z-[0]
               lg:w-[70%]
             "
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
+            initial={{opacity: 0, y: 50}}
+            animate={animation}
+            transition={{delay:0.5, duration: 0.8}}
           >
             <img
               src={item.img}
               className="
-                w-[100%] rounded-[20px] m-auto h-[100%]
+                w-[100%] m-auto h-[100%]
               "
               alt={item.name}
             />
@@ -83,7 +100,7 @@ function Project() {
               </p>
               <Button value={"View Result"} href='' bg='#8155FF' />
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

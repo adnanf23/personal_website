@@ -21,7 +21,14 @@ function Footer(){
                         "
             >
                 <div className="row">
-                    <Typografi items={[typografiData[5]]} />
+                    <h1           className="
+            text-[9.3vw] leading-[11vw] text-heading font-madimi m-auto
+            lg:text-[3vw] lg:leading-[3vw]">
+                    To join the community and collaborate
+                    </h1>
+                    <p>
+                        
+                    </p>
                 </div>
                 {aboutList.map((item, index) => (
                     <div key={index}>

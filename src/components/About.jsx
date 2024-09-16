@@ -1,7 +1,22 @@
 import Typografi, { typografiData } from "./Typografi.jsx";
 import Card, { dataCard } from "./Card.jsx";
+import { motion, useAnimation } from "framer-motion";
+import React, {useEffect} from "react";
+import { useInView } from "react-intersection-observer";
 
 function About() {
+  const {ref, inView} = useInView({threshold: 1, triggerOnce: false})
+  const animation = useAnimation()
+
+  useEffect(() => {
+    if (inView) {
+      animation.start({opacity:1, y:0})
+    } else {
+      animation.start({opacity:0, y:50})
+    }
+  },[animation, inView])
+
+
   return (
     <div
       id="about"
@@ -25,13 +40,17 @@ function About() {
                   lg:gap-[10px]
                   "
       >
-        <p
+        <motion.p
+        ref={ref}
           className="
                     font-poppins text-paragraph mb-[-7px]
                     "
+                    initial={{opacity: 0, y: 50}}
+                    animate={animation}
+                    transition={{delay: 1, duration: 0.8}}
         >
           soft skills that I improved :
-        </p>
+        </motion.p>
         <div
           className="
                     flex flex-col gap-[15px]

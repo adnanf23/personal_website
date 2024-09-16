@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 export const typografiData = [
   {
     heading: "Learn, Career And Achievement",
     span: "",
-    spanColor: "transparent", // Nilai default
+    spanColor: "transparent",
     align: "center",
-    paragraph: "A developer, designer, and editor.", // Perbaiki ejaan
+    paragraph: "A developer, designer, and editor.",
   },
   {
     heading: "Get to",
@@ -52,51 +54,84 @@ function Typografi({ items }) {
   return (
     <div>
       {items.map((item, index) => (
-        <div
-          key={index}
-          className="
-                    w-[100%] flex flex-col gap-3 m-auto
-                    "
+        <ItemTypografi key={index} item={item} index={index} />
+      ))}
+    </div>
+  );
+}
+
+function ItemTypografi({ item, index }) {
+  const controlHeadings = useAnimation();
+  const controlParagraphs = useAnimation();
+  const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: false });
+
+  useEffect(() => {
+    if (index === 5) return; // Tidak jalankan animasi untuk index 5
+
+    if (inView) {
+      controlHeadings.start({
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.8 }
+      });
+      controlParagraphs.start({
+        opacity: 1,
+        y: 0,
+        transition: { delay: 0.5, duration: 0.8 }
+      });
+    } else {
+      controlHeadings.start({ opacity: 0, y: 50 });
+      controlParagraphs.start({ opacity: 0, y: 50 });
+    }
+  }, [inView, controlHeadings, controlParagraphs, index]);
+
+  return (
+    <div>
+      <div
+        ref={ref}
+        key={index}
+        className="
+          w-[100%] flex flex-col gap-3 m-auto
+        "
+        style={{
+          textAlign: item.align,
+        }}
+      >
+        <motion.h1
+          className={`
+            text-[9.3vw] leading-[11vw] text-heading font-madimi m-auto
+            lg:text-[3vw] lg:leading-[3vw]
+          `}
           style={{
             textAlign: item.align,
+            margin: item.align === "center" ? "auto" : "initial",
           }}
+          initial={{ opacity: 0, y: 50 }}
+          animate={controlHeadings} // Jika index ke 5, tidak ada animasi
         >
-          <h1
-            className={`
-                    text-[9.3vw]  leading-[11vw] text-heading font-madimi m-auto
-                    lg:text-[3vw] lg:leading-[3vw]
-                `}
-                
+          {item.heading}
+          <span
             style={{
-              textAlign: item.align,
-              margin: item.align === "center" ? "auto" : "initial",
-              width: index === 4 ? '20%' : 'initial', // Use 4 instead of "4"
-              border: index === 4 ? '2px solid red' : 'none',
+              color: item.spanColor,
             }}
           >
-            {item.heading}
-
-            <span
-              style={{
-                color: item.spanColor,
-              }}
-            >
-              {item.span}
-            </span>
-          </h1>
-          <p
-            className="
-                    text-[3.9vw] text-paragraph w-[100%]
-                    lg:text-[1.3vw] text-justify
-                    "
-            style={{
-              textAlign: item.align === "center" ? "center" : "justify",
-            }}
-          >
-            {item.paragraph}
-          </p>
-        </div>
-      ))}
+            {item.span}
+          </span>
+        </motion.h1>
+        <motion.p
+          className="
+            text-[3.9vw] text-paragraph w-[100%]
+            lg:text-[1.3vw] text-justify
+          "
+          style={{
+            textAlign: item.align === "center" ? "center" : "justify",
+          }}
+          initial={{ opacity: 0, y: 50 }}
+          animate={controlParagraphs} // Jika index ke 5, tidak ada animasi
+        >
+          {item.paragraph}
+        </motion.p>
+      </div>
     </div>
   );
 }
