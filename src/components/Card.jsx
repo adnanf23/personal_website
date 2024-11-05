@@ -59,7 +59,7 @@ function ItemCard({ item, index }) {
       <img
         src={item.src}
         alt={item.title}
-        className="w-10 h-[100%] md:w-20 md:h-auto lg:w-10"
+        className="w-10 h-[auto] md:w-20 md:h-auto lg:w-10"
       />
       <div className="card-text flex flex-col gap-[-4px]">
         <h3

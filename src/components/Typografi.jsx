@@ -99,7 +99,7 @@ function ItemTypografi({ item, index }) {
       >
         <motion.h1
           className={`
-            text-[9.3vw] leading-[11vw] text-heading font-madimi m-auto
+            text-[9.3vw] leading-[11vw] text-heading font-poppins m-auto
             lg:text-[3vw] lg:leading-[3vw]
           `}
           style={{

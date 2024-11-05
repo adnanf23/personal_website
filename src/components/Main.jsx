@@ -30,6 +30,7 @@ function Main() {
     >
       <Hero />
       <motion.img
+        loading="lazy"
         ref={ref}
         src={Profil}
         alt=""

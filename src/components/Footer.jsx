@@ -17,14 +17,14 @@ function Footer(){
         >
             <div className="
                         conten flex flex-col gap-20
-                        lg:flex-row
+                        lg:flex-row justify-between
                         "
             >
                 <div className="row">
                     <h1           className="
-            text-[9.3vw] leading-[11vw] text-heading font-madimi m-auto
-            lg:text-[3vw] lg:leading-[3vw]">
-                    To join the community and collaborate
+            text-[9.3vw] leading-[11vw] text-heading font-poppins m-auto
+            lg:text-[2vw] lg:leading-[3vw]">
+                    To join the community <br/> and collaborate
                     </h1>
                     <p>
                         
@@ -34,20 +34,21 @@ function Footer(){
                     <div key={index}>
                         <h1
                         className="
-                        text-heading text-[8vw] font-madimi
-                        lg:text-[3vw]
+                        text-heading text-[8vw] font-poppins
+                        lg:text-[1.8vw]
                         ">
                             {item.heading}
                         </h1>
                         <ul className="
                                     flex flex-col gap-3
+                                    justify-center
                                     "
                         >
                             <a href={item.src[0]}>
                                 <li
                                     className="
                                         text-paragraph font-poppins text-[3vw]
-                                        lg:text-[1.3vw]
+                                        lg:text-[1vw]
                                     "
                                 >
                                    {item.list[0]}
@@ -57,7 +58,7 @@ function Footer(){
                                 <li
                                     className={`
                                         text-paragraph font-poppins text-[3vw]
-                                        lg:text-[1.3vw]
+                                        lg:text-[1vw]
                                     `}
                                 >
                                     {item.list[1]}
@@ -67,7 +68,7 @@ function Footer(){
                                 <li
                                     className={`
                                         text-paragraph font-poppins text-[3vw]
-                                        lg:text-[1.3vw]
+                                        lg:text-[1vw]
                                     `}
                                 >
                                     {item.list[2]}

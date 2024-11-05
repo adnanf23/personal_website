@@ -10,12 +10,7 @@ const dataProject = [
   {
     name: "Calculator System",
     img: CalcuProj,
-    desc: "1wiiiwuucscsuicha",
-  },
-  {
-    name: "Calculator System",
-    img: CalcuProj,
-    desc: "eakkkkkkk",
+    desc: "I make Calculator System for implementation in Website use React Js and Tailwind",
   },
 ];
 
@@ -43,7 +38,7 @@ function Project() {
       <div className="lg:w-[48%] mx-auto">
         <Typografi items={[typografiData[4]]} />
       </div>
-      <div className="flex flex-col gap-10 lg:flex-row">
+      <div className="flex flex-col gap-10 lg:flex-row justify-center">
         {dataProject.map((item, index) => (
           <motion.div
             ref={ref}
@@ -76,6 +71,7 @@ function Project() {
                           leading-5 text-[4vw] font-poppins
                           md:leading-9
                           lg:text-[1.6vw] lg:leading-9
+                          text-paragraph
                           "
               >
                 <b className="
@@ -89,6 +85,7 @@ function Project() {
                           leading-5 text-[4vw] font-poppins
                           md:leading-9
                           lg:text-[1.6vw] lg:leading-9
+                          text-paragraph
                           "
               >
                 <b className="
