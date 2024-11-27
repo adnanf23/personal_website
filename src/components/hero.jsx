@@ -91,7 +91,7 @@ function Hero() {
         animate={animation}
         transition={{delay: 1.5, duration: 0.8}}>
 
-          <Button value={"Get My Cv"} bg="#5AB9FD"/>
+          <Button value={"Get My Cv"} bg="#339DFE"/>
       </motion.div>
     </div>
   );

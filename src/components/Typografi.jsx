@@ -21,7 +21,7 @@ export const typografiData = [
   {
     heading: "Ability exists \n",
     span: "because of will",
-    spanColor: "#5AB9FD",
+    spanColor: "#339DFE",
     align: "left",
     paragraph:
       "Abilities that I will continue to improve because of my will and hobbies. Development, design, and editing are the fields that I studied.",
@@ -99,7 +99,8 @@ function ItemTypografi({ item, index }) {
       >
         <motion.h1
           className={`
-            text-[9.3vw] leading-[11vw] text-heading font-poppins m-auto
+            text-[9.3vw] leading-[11vw] text-heading font-montserrat m-auto font-medium
+            md:text-[6vw] md:leading-[6vw]
             lg:text-[3vw] lg:leading-[3vw]
           `}
           style={{
@@ -121,6 +122,7 @@ function ItemTypografi({ item, index }) {
         <motion.p
           className="
             text-[3.9vw] text-paragraph w-[100%]
+            md:text-[3vw]
             lg:text-[1.3vw] text-justify
           "
           style={{

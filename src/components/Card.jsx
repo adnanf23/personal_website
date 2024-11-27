@@ -63,7 +63,7 @@ function ItemCard({ item, index }) {
       />
       <div className="card-text flex flex-col gap-[-4px]">
         <h3
-          className="font-madimi text-heading text-[4vw] lg:text-[1.3vw]"
+          className="font-montserrat font-bold text-heading text-[3vw] lg:text-[1vw]"
           style={{ color: item.colorTitle }}
         >
           {item.title}

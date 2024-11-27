@@ -24,12 +24,13 @@ export default {
       'orange' : '#FF9255',
       'box' : '#1E1E1E',
       'transparent' : 'transparent',
-      'overFrom' : "rgba(30, 30, 30, 0.9)",
-      'overTo' : '#1E1E1E',
+      'overFrom' : "rgba(5, 5, 5, 0.95)",
+      'overTo' : 'rgba(5, 5, 5, 0.7)',
     },
     fontFamily: {
-      poppins : ["Poppins", 'sans-serif'],
+      poppins : ['Poppins', 'sans-serif'],
       madimi : ['Madimi One', 'sans-serif'],
+      montserrat : ['montserrat', 'sans-serif'],
     },
     borderRadius: {
       'none': '0',

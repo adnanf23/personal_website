@@ -69,9 +69,9 @@ function Career (){
                                     "
                         >
                             <h3 className="
-                                        font-madimi text-heading text-[5vw]
-                                        md:text-[4vw]
-                                        lg:text-[1.4vw]
+                                        font-montserrat  font-bold text-heading text-[4.1vw]
+                                        md:text-[3.1vw]
+                                        lg:text-[1vw]
                                         "
                             >
                                 Pojoksatu.id

@@ -105,7 +105,7 @@ function NavBar() {
             </li>
           ))}
         </ul>
-        <Button value={"Contact"} href='#footer' bg='#5AB9FD' />
+        <Button value={"Contact"} href='#footer' bg='#339DFE' />
       </nav>
     </header>
   );

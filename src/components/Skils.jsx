@@ -67,7 +67,7 @@ function Skils() {
           animate={animation}
           transition={{ delay: 1, duration: 0.8 }}
         >
-          <Button value={"Certificate"} bg="#5AB9FD" />
+          <Button value={"Certificate"} bg="#339DFE"/>
         </motion.div>
       </div>
       <div
@@ -88,6 +88,8 @@ function Skils() {
         <div
           className="
                     flex flex-wrap gap-2
+                    md:w-[86%]
+                    lg:w-[100%]
                     "
         >
           {skils.map((item, index) => {
@@ -100,7 +102,7 @@ function Skils() {
                 className="
                   w-[55px]
                   md:w-[70px]
-                  lg:w-[70px]
+                  lg:w-[50px]
                 "
                 initial={{ opacity: 0, y: 50 }}
                 animate={animation}

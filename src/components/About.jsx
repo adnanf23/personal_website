@@ -54,7 +54,7 @@ function About() {
         <div
           className="
                     flex flex-col gap-[15px]
-                    md:gap-[20px]
+                    md:gap-[20px] md:items-start
                     lg:flex-row lg:gap-[10px]
                     "
         >
@@ -64,7 +64,7 @@ function About() {
         <div
           className="
                     flex flex-col gap-[15px]
-                    md:gap-[20px]
+                    md:gap-[20px] md:items-start
                     lg:flex-row lg:gap-[10px]
                     "
         >

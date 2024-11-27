@@ -35,7 +35,8 @@ function Main() {
         src={Profil}
         alt=""
         className=" 
-                w-[100%] absolute z-[-3] top-100 left-0 mx-auto  mt-[-200px]
+                w-[100%] absolute z-[-3] top-100 left-0 invisible mx-auto  mt-[-200px]
+                md:visible
                 lg:w-[100%]
             "
         initial={{opacity: 0, y: 50}}

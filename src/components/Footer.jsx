@@ -16,25 +16,27 @@ function Footer(){
         lg:px-40"
         >
             <div className="
-                        conten flex flex-col gap-20
+                        conten flex flex-col gap-10
+                        md:gap-20
                         lg:flex-row justify-between
                         "
             >
                 <div className="row">
                     <h1           className="
-            text-[9.3vw] leading-[11vw] text-heading font-poppins m-auto
-            lg:text-[2vw] lg:leading-[3vw]">
+            text-[6vw] leading-[6vw] text-heading font-poppins m-auto
+            lg:text-[1.8vw] lg:leading-[2vw]">
                     To join the community <br/> and collaborate
                     </h1>
-                    <p>
-                        
+                    <p className="text-[3vw] text-paragraph w-[70%]
+                    lg:text-[1vw]">
+                    Be part of the growing movement of technology enthusiasts, please contact me.
                     </p>
                 </div>
                 {aboutList.map((item, index) => (
                     <div key={index}>
                         <h1
                         className="
-                        text-heading text-[8vw] font-poppins
+                        text-heading text-[6vw] font-monteserrat
                         lg:text-[1.8vw]
                         ">
                             {item.heading}
@@ -83,7 +85,9 @@ function Footer(){
                 border-[1px] border-heading
                 "
                 />
-                <p className="text-center text-paragraph pb-[10px]">
+                <p className="text-center text-paragraph p-[10px] text-[0.9vw]
+                md:text-[2vw]
+                lg:text-[1vw]">
                     Created By Adnan Fauzan
                 </p>
             </div>
